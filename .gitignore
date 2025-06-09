@@ -1,0 +1,27 @@
+# Jekyll .gitignore
+
+# Ignore site build output
+_site/
+
+# Ignore Sass cache
+.sass-cache/
+
+# Ignore Jekyll metadata
+.jekyll-metadata
+
+# Ignore log files and temp files
+*.log
+tmp/
+
+# Ignore node modules (if using npm for assets)
+node_modules/
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore dotenv environment files
+.env
+
+# Ignore VSCode settings (optional)
+.vscode/ 

@@ -1,0 +1,946 @@
+Cognia Accreditation Self-Assessment
+Action Plan
+Table of Contents
+Synthesized Self-Assessment Requirements and Criteria
+Accreditation Self-Assessment Team Structure
+Accreditation Data Collection Plan: Directory Structure & Responsibilities
+Accreditation Self-Assessment: Detailed Timeline & Tasks
+Accreditation Self-Assessment: Quality Assurance Plan
+Synthesized Self-Assessment
+Requirements and Criteria
+This document synthesizes the key requirements and criteria for the Cognia
+accreditation self-assessment phase, based on the provided documentation.
+1. Overall Process & Timeline
+Purpose: The self-assessment is a core part of the continuous improvement
+process required for Cognia accreditation.
+Cycle: Accreditation runs on a six-year cycle, with the self-assessment preceding
+the Engagement Review.
+Timeline: The self-assessment must be completed by Spring 2026.
+Key Phases: The process involves data collection, analysis, synthesis, rating
+against standards, writing narratives, and preparing for the Engagement Review.
+Continuous Improvement: The process should be authentic, focused on
+improvement, and involve relevant stakeholders.
+Policy Adherence: The school must adhere to all Cognia policies, standards, and
+assurances throughout the process.
+Reporting: Progress reports may be required by Cognia.
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+2. Standards & Criteria
+Framework: The assessment is based on the Cognia Performance Standards (30+
+standards).
+Key Characteristics: Standards are grouped under four Key Characteristics:
+Culture of Learning, Leadership for Learning, Engagement of Learning, and Growth
+in Learning.
+Rating: Each standard must be rated using the provided 4-level rubrics.
+Evidence: Each rating must be supported by specific, documented evidence.
+Assurances: The institution must meet relevant Cognia Assurances.
+3. Data Collection & Analysis
+Required Analyses: Three specific analyses are mandatory:
+Student Performance Analysis
+Stakeholder Feedback Analysis (Learners, Families, Teachers required)
+Learning Environment Observation Analysis (using a tool like eleot)
+Data Types: Collect diverse data types: Documentation, Observations, Perceptions,
+and Performance.
+Data Sources: Identify and evaluate existing data sources first. Use the provided
+templates ( Required Analyses Template ) to document sources, trend data,
+and comments.
+Data Cleaning: Crucial step involving evaluating data relevance, validity, accuracy,
+sample size, collection methods, bias, and representation. Cleaned data sources
+should be specific (e.g., specific survey items, specific handbook pages).
+Analysis Process (5 Steps):
+Understand Purpose
+Identify & Evaluate Data Sources
+Select & Clean Data Sources
+Analyze & Synthesize Information (Identify themes, strengths, weaknesses)
+Interpret Findings, Prioritize, & Develop Theory of Action (Root cause analysis,
+if/then/so that statements)
+Disaggregation: Data (especially student performance) should be disaggregated
+by relevant subgroups.
+Longitudinal Data: Use trend data (multiple years/administrations) where
+possible.
+Evaluative Criteria (EC): Rate data sources/processes using the specific ECs
+provided for each required analysis.
+•
+•
+•
+•
+•
+•
+◦
+◦
+◦
+•
+•
+•
+•
+1.
+2.
+3.
+4.
+5.
+•
+•
+•
+4. Evidence Requirements
+Link to Standards: Evidence must directly support the ratings given for each
+Performance Standard.
+Variety: Use multiple sources and types of evidence (documentation, observation,
+perception, performance) to support findings.
+Specificity: Evidence cited in narratives must be specific and verifiable (e.g.,
+Accreditation Self-Assessment Team
+Structure
+This document outlines the proposed team structure to manage the Cognia
+accreditation self-assessment process, ensuring comprehensive coverage of all
+requirements and standards.
+1. Accreditation Steering Committee (ASC)
+Mandate: Provide overall leadership, coordination, and oversight for the entire
+self-assessment process. Ensure alignment with school mission and strategic goals.
+Monitor progress against the timeline and allocate necessary resources.
+Chair: [Principal/Head of School Name]
+Accreditation Coordinator: [Assigned Staff Member Name - e.g., Assistant
+Principal, Lead Teacher]
+Members:
+[Deputy Head/Assistant Principal Name]
+[Department Head Representative Name]
+[Business Manager/Operations Lead Name]
+Chairs of the Key Characteristic Working Groups (KCWGs)
+Data Management & Analysis Lead
+2. Data Management & Analysis Lead
+Mandate: Oversee the development and implementation of the data collection
+plan and directory structure. Coordinate the three Required Analysis Teams (RATs).
+Ensure data quality, cleaning, and timely analysis. Provide data support to KCWGs.
+Lead: [Data Specialist/Assessment Coordinator Name]
+•
+•
+•
+•
+•
+•
+•
+◦
+◦
+◦
+◦
+◦
+•
+•
+3. Required Analysis Teams (RATs)
+Mandate: Conduct the three specific analyses required by Cognia (Student
+Performance, Stakeholder Feedback, Learning Environment) using the defined
+process (data cleaning, analysis, synthesis, findings, theory of action). Provide
+detailed analysis reports and findings to the relevant KCWGs and the ASC.
+Reporting to: Data Management & Analysis Lead
+3.1. Student Performance RAT
+Focus: Analyze longitudinal, disaggregated student assessment data
+(standardized tests, internal assessments, etc.).
+Chair: [Assessment Coordinator/Math Dept. Head Name]
+Members:
+[Data Analyst/Teacher with Data Skills Name]
+[Curriculum Coordinator Name]
+[Special Education Lead Name]
+[Grade Level/Dept. Representative Name]
+3.2. Stakeholder Feedback RAT
+Focus: Administer (if needed), collect, and analyze feedback data from
+learners, families, and staff (surveys, focus groups).
+Chair: [Counselor/Communications Lead Name]
+Members:
+[Parent Liaison/Admin Support Name]
+[Teacher Representative Name]
+[Student Government Advisor Name]
+3.3. Learning Environment RAT
+Focus: Conduct and analyze learning environment observations (e.g., using
+eleot). Ensure observers are trained and calibrated. Analyze observation data
+for trends in learner engagement.
+Chair: [Instructional Coach/Assistant Principal Name]
+Members:
+[Certified Observer Name 1]
+[Certified Observer Name 2]
+[Teacher Leader Name]
+•
+•
+◦
+◦
+◦
+▪
+▪
+▪
+▪
+◦
+◦
+◦
+▪
+▪
+▪
+◦
+◦
+◦
+▪
+▪
+▪
+4. Key Characteristic Working Groups (KCWGs)
+Mandate: Deeply understand the Performance Standards within their assigned Key
+Characteristic. Gather and organize evidence (supported by RATs and Data Lead),
+rate the standards using the rubrics, and draft the narrative for their Key
+Characteristic, incorporating findings from the RATs.
+Reporting to: Accreditation Steering Committee (ASC)
+4.1. Culture of Learning KCWG (Standards 1-6)
+Chair: [Staff Member Name - e.g., Counselor, Dean of Students]
+Members:
+[Teacher Name 1]
+[Teacher Name 2]
+[Support Staff Name]
+[Parent Representative Name]
+4.2. Leadership for Learning KCWG (Standards 7-15)
+Chair: [Staff Member Name - e.g., Department Head, Assistant Principal]
+Members:
+[Teacher Name 1]
+[Teacher Name 2]
+[Governing Body/Board Member Name (if applicable)]
+[Admin Staff Name]
+4.3. Engagement of Learning KCWG (Standards 16-23)
+Chair: [Staff Member Name - e.g., Curriculum Coordinator, Tech Integration
+Specialist]
+Members:
+[Teacher Name 1]
+[Teacher Name 2]
+[Librarian/Media Specialist Name]
+[Student Representative Name]
+4.4. Growth in Learning KCWG (Standards 24-30)
+Chair: [Staff Member Name - e.g., Assessment Coordinator, Instructional
+Coach]
+Members:
+[Teacher Name 1]
+•
+•
+◦
+◦
+▪
+▪
+▪
+▪
+◦
+◦
+▪
+▪
+▪
+▪
+◦
+◦
+▪
+▪
+▪
+▪
+◦
+◦
+▪
+[Teacher Name 2]
+[Special Education Lead Name]
+[Professional Development Coordinator Name]
+5. Executive Summary Team
+Mandate: Draft the Executive Summary narrative based on input from the ASC,
+KCWGs, and RATs, following the prompts in the Self-Assessment Workbook.
+Lead: [Accreditation Coordinator Name]
+Members:
+[Principal/Head of School Name]
+[Communications Lead/Writer Name]
+6. Quality Assurance & Review Committee (QARC)
+Mandate: Conduct an independent review of the draft self-assessment report,
+including ratings, evidence, analyses, and narratives. Check for consistency, clarity,
+accuracy, and completeness against Cognia standards and requirements. Provide
+feedback to the ASC and relevant teams.
+Chair: [Senior Staff Member not on ASC or KCWG Chair - e.g., Experienced
+Department Head]
+Members: (Should ideally not be heavily involved in drafting)
+[Teacher Name 1 (Different Dept/Grade)]
+[Teacher Name 2 (Different Dept/Grade)]
+[Admin Staff/Support Staff Name]
+[External Peer Reviewer (Optional)]
+Accreditation Data Collection Plan:
+Directory Structure & Responsibilities
+This document outlines the directory structure for organizing evidence and assigns
+responsibilities for data collection and management during the Cognia self-assessment
+process.
+Overall Oversight: Data Management & Analysis Lead
+▪
+▪
+▪
+•
+•
+•
+◦
+◦
+•
+•
+•
+◦
+◦
+◦
+◦
+Directory Structure & Responsibilities
+/home/ubuntu/accreditation_evidence/
+├── 00_Required_Analyses/ (Oversight: Data Management &
+Analysis Lead)
+│ ├── Student_Performance/ (Responsibility: Student
+Performance RAT)
+│ │ ├── Raw_Data/ # Original assessment files,
+exports
+│ │ ├── Cleaned_Data/ # Processed, validated data
+sets
+│ │ ├── Analysis_Reports/ # Reports, charts, findings
+from RAT
+│ │ └── Narrative_Draft.md # Draft narrative for this
+analysis
+│ ├── Stakeholder_Feedback/ (Responsibility: Stakeholder
+Feedback RAT)
+│ │ ├── Surveys/ # Survey instruments, raw
+responses, summaries
+│ │ ├── Focus_Groups/ # Protocols, transcripts/notes,
+summaries
+│ │ ├── Analysis_Reports/ # Reports, thematic analysis,
+findings from RAT
+│ │ └── Narrative_Draft.md # Draft narrative for this
+analysis
+│ └── Learning_Environment/ (Responsibility: Learning
+Environment RAT)
+│ ├── Observation_Data/ # Raw observation scores
+(e.g., eleot results)
+│ ├── Observer_Calibration_Docs/ # Training materials,
+calibration records
+│ ├── Analysis_Reports/ # Reports, trend analysis,
+findings from RAT
+│ └── Narrative_Draft.md # Draft narrative for this
+analysis
+├── 01_Culture_of_Learning/ (Responsibility: Culture of
+Learning KCWG)
+│ ├── Standard_1/
+# Folder for evidence related to Standard 1
+│ │ ├── Evidence_Docs/ # Specific documents, survey
+excerpts, policies
+│ │ └── Notes.md # Notes linking evidence to
+standard criteria
+│ ├── Standard_2/
+# Folder for evidence related to Standard 2
+│ │ ├── Evidence_Docs/
+│ │ └── Notes.md
+│ ├── ... (Standards 3-6) # Repeat structure for each
+standard
+│ └── Narrative_Draft.md # Overall draft narrative for
+Culture of Learning
+├── 02_Leadership_for_Learning/ (Responsibility: Leadership for
+Learning KCWG)
+│ ├── Standard_7/
+# Folder for evidence related to Standard 7
+│ │ ├── Evidence_Docs/
+│ │ └── Notes.md
+│ ├── ... (Standards 8-15) # Repeat structure for each
+standard
+│ └── Narrative_Draft.md # Overall draft narrative for
+Leadership for Learning
+├── 03_Engagement_of_Learning/ (Responsibility: Engagement of
+Learning KCWG)
+│ ├── Standard_16/
+# Folder for evidence related to Standard 16
+│ │ ├── Evidence_Docs/
+│ │ └── Notes.md
+│ ├── ... (Standards 17-23) # Repeat structure for each
+standard
+│ └── Narrative_Draft.md # Overall draft narrative for
+Engagement of Learning
+├── 04_Growth_in_Learning/ (Responsibility: Growth in Learning
+KCWG)
+│ ├── Standard_24/
+# Folder for evidence related to Standard 24
+│ │ ├── Evidence_Docs/
+│ │ └── Notes.md
+│ ├── ... (Standards 25-30) # Repeat structure for each
+standard
+│ └── Narrative_Draft.md # Overall draft narrative for
+Growth in Learning
+├── 05_Executive_Summary/ (Responsibility: Executive Summary
+Team)
+│ └── Narrative_Draft.md # Draft narrative for the
+Executive Summary
+└── 06_Supporting_Documents/ (Responsibility: ASC/Accreditation
+Coordinator)
+├── School_Policies/ # General school-wide policies
+├── Handbooks/ # Staff, Student, Parent
+Handbooks
+├── Improvement_Plans/ # School Improvement Plan,
+strategic plans
+└── Other_Institutional_Docs/ # Mission/Vision, Org Charts,
+etc.
+Key Responsibilities Summary
+Data Management & Analysis Lead: Ensures overall organization, data quality,
+and timely completion of Required Analyses. Guides teams on using the structure.
+•
+Required Analysis Teams (RATs): Collect, clean, analyze, and report on data for
+their specific analysis area within the 00_Required_Analyses subdirectories.
+Produce analysis reports and draft narratives for their section.
+Key Characteristic Working Groups (KCWGs): Gather specific evidence
+supporting each standard within their characteristic, placing it in the relevant
+Evidence_Docs folder and adding explanatory notes in Notes.md . Draft the
+overall narrative for their Key Characteristic, referencing evidence and
+incorporating findings from the RATs.
+Executive Summary Team: Drafts the Executive Summary using input from all
+teams.
+Accreditation Steering Committee (ASC) / Accreditation Coordinator: Ensures
+essential institutional documents are collected in 06_Supporting_Documents
+and facilitates overall process.
+Notes
+Teams should link evidence from 00_Required_Analyses and
+06_Supporting_Documents within their Notes.md files rather than duplicating
+large files.
+Consistent naming conventions for evidence files are recommended.
+Regular backups of the accreditation_evidence directory are crucial.
+Accreditation Self-Assessment: Detailed
+Timeline & Tasks
+This timeline outlines the key phases, tasks, responsibilities, and deadlines for the
+Cognia accreditation self-assessment process, aiming for completion by Spring 2026.
+Target Completion: Spring 2026 (Submit report by end of May 2026) Overall Lead:
+Accreditation Steering Committee (ASC) Coordination: Accreditation Coordinator
+Phase 1: Setup & Initial Data Gathering (May 2025 - Aug
+2025)
+May 2025:
+Task: Finalize team member appointments & confirm roles.
+Responsibility: ASC Chair / Principal
+•
+•
+•
+•
+•
+•
+•
+•
+◦
+▪
+Task: Schedule & conduct kickoff meeting/orientation for all teams (review
+standards, process, timeline, tools, directory structure).
+Responsibility: Accreditation Coordinator
+Task: Confirm data directory structure, access permissions, and any required
+tools.
+Responsibility: Data Management & Analysis Lead
+June - August 2025:
+Task: Required Analysis Teams (RATs) identify existing relevant data sources
+(Student Performance, Stakeholder Feedback, Learning Environment) and
+begin systematic collection.
+Responsibility: RAT Chairs & Members
+Task: Stakeholder Feedback RAT plans survey administration (if new surveys
+are needed) and timelines.
+Responsibility: Stakeholder Feedback RAT Chair
+Task: Learning Environment RAT plans observation schedule, confirms
+observer availability, and verifies observer training/calibration status.
+Responsibility: Learning Environment RAT Chair
+Task: Key Characteristic Working Groups (KCWGs) review assigned standards
+in depth and begin identifying potential evidence within existing institutional
+documents ( 06_Supporting_Documents ).
+Responsibility: KCWG Chairs & Members
+Task: Stakeholder Feedback RAT deploys surveys (if applicable).
+Responsibility: Stakeholder Feedback RAT Chair
+Milestone: All teams established, oriented, and initial data gathering
+underway.
+Phase 2: Data Analysis & Evidence Collection (Sep 2025 -
+Dec 2025)
+September - October 2025:
+Task: RATs continue data collection and begin data cleaning processes.
+Responsibility: RAT Chairs & Members
+Task: Learning Environment RAT conducts scheduled observations.
+Responsibility: Learning Environment RAT Chair & Observers
+Task: KCWGs actively collect specific evidence documents for each standard,
+organizing them within the designated directory structure.
+Responsibility: KCWG Chairs & Members
+Task: ASC holds mid-phase progress check-in meeting with all team chairs/
+leads.
+Responsibility: Accreditation Coordinator
+◦
+▪
+◦
+▪
+•
+◦
+▪
+◦
+▪
+◦
+▪
+◦
+▪
+◦
+▪
+◦
+•
+◦
+▪
+◦
+▪
+◦
+▪
+◦
+▪
+November - December 2025:
+Task: RATs complete data cleaning and perform initial data analysis. Draft
+preliminary findings reports.
+Responsibility: RAT Chairs & Members
+Task: KCWGs continue evidence collection and begin preliminary rating of
+standards based on gathered evidence, documenting rationale in Notes.md .
+Responsibility: KCWG Chairs & Members
+Task: ASC reviews preliminary RAT findings reports.
+Responsibility: ASC Members
+Milestone: Initial data analysis complete; evidence collection significantly
+advanced.
+Phase 3: Narrative Drafting & Initial Review (Jan 2026 -
+Mar 2026)
+January 2026:
+Task: RATs finalize data analysis reports and draft the narratives for their
+respective sections (Student Performance, Stakeholder Feedback, Learning
+Environment).
+Responsibility: RAT Chairs & Members
+Task: KCWGs finalize evidence collection and complete the rating for each
+standard within their characteristic.
+Responsibility: KCWG Chairs & Members
+February 2026:
+Task: KCWGs draft the comprehensive narratives for their Key Characteristics,
+integrating relevant findings from RAT reports and citing specific evidence.
+Responsibility: KCWG Chairs & Members
+Task: Executive Summary Team begins drafting the Executive Summary,
+drawing on institutional documents and initial findings.
+Responsibility: Executive Summary Team Lead & Members
+March 2026:
+Task: All RATs, KCWGs, and the Executive Summary Team submit their
+completed draft reports/narratives to the ASC.
+Responsibility: All Team Chairs/Leads
+Task: ASC compiles the first full draft of the Self-Assessment Report.
+Responsibility: Accreditation Coordinator
+Task: ASC submits the complete first draft to the Quality Assurance & Review
+Committee (QARC).
+Responsibility: Accreditation Coordinator
+Milestone: First complete draft of the Self-Assessment Report compiled.
+•
+◦
+▪
+◦
+▪
+◦
+▪
+◦
+•
+◦
+▪
+◦
+▪
+•
+◦
+▪
+◦
+▪
+•
+◦
+▪
+◦
+▪
+◦
+▪
+◦
+Phase 4: Revision & Finalization (Apr 2026 - May 2026)
+April 2026:
+Task: QARC conducts a thorough review of the draft report against Cognia
+requirements (standards, evidence, clarity, consistency) and provides
+detailed feedback to the ASC.
+Responsibility: QARC Chair & Members
+Task: ASC reviews QARC feedback and distributes relevant sections to the
+appropriate RATs, KCWGs, and Executive Summary Team.
+Responsibility: Accreditation Coordinator
+Task: Teams revise their respective sections based on QARC feedback.
+Responsibility: All Team Chairs/Leads & Members
+May 2026:
+Task: Teams submit revised sections to the ASC.
+Responsibility: All Team Chairs/Leads
+Task: ASC compiles the final version of the Self-Assessment Report.
+Responsibility: Accreditation Coordinator
+Task: Final review and approval of the report by the ASC and Principal/Head
+of School.
+Responsibility: ASC / Principal
+Task: Submit the final Self-Assessment Report and supporting evidence via
+the Cognia online platform.
+Responsibility: Accreditation Coordinator
+Milestone: Self-Assessment Report successfully submitted by Spring 2026
+deadline.
+This timeline is a guide and may require adjustments based on school calendars, team
+availability, and unforeseen circumstances. Regular communication and monitoring by
+the ASC are essential.
+Accreditation Self-Assessment: Quality
+Assurance Plan
+This document outlines the structure, responsibilities, and process for the Quality
+Assurance & Review Committee (QARC) as part of the Cognia accreditation selfassessment.
+•
+◦
+▪
+◦
+▪
+◦
+▪
+•
+◦
+▪
+◦
+▪
+◦
+▪
+◦
+▪
+◦
+1. Quality Assurance & Review Committee (QARC)
+Assignment: The QARC is formally assigned as defined in the
+team_structure.md document.
+Mandate: To conduct an independent, objective review of the first complete draft
+of the Self-Assessment Report before final revisions and submission. The QARC
+ensures the report is comprehensive, accurate, consistent, clearly written, and fully
+aligned with Cognia standards, policies, and requirements.
+Composition:
+Chair: [Senior Staff Member not on ASC or KCWG Chair - e.g., Experienced
+Department Head]
+Members: (Selected for objectivity; ideally not primary authors of report
+sections)
+[Teacher Name 1 (Different Dept/Grade)]
+[Teacher Name 2 (Different Dept/Grade)]
+[Admin Staff/Support Staff Name]
+[External Peer Reviewer (Optional - e.g., staff from another accredited
+school)]
+Reporting: The QARC reports its findings and recommendations directly to the
+Accreditation Steering Committee (ASC).
+2. Quality Assurance Steps & Timeline
+Step 1: Receive Draft Report (End of March 2026)
+The Accreditation Coordinator compiles the first complete draft of the Self-
+Assessment Report (including Executive Summary, Required Analyses
+narratives, Key Characteristic narratives, ratings, and links/references to
+evidence) and submits it to the QARC Chair.
+Step 2: Conduct Review (First two weeks of April 2026)
+The QARC Chair distributes sections or the full report to members for review.
+QARC members independently and collectively review the draft against the
+following criteria:
+Completeness: Are all required sections present (Executive Summary, 3
+Required Analyses, 4 Key Characteristic Narratives, all standards rated)?
+Alignment with Standards: Do the ratings accurately reflect the
+evidence presented and the rubric descriptions for each Cognia
+Performance Standard?
+Evidence Quality: Is the cited evidence sufficient, relevant, specific, and
+verifiable? Does it clearly support the ratings and narrative points?
+•
+•
+•
+◦
+◦
+▪
+▪
+▪
+▪
+•
+•
+◦
+•
+◦
+◦
+▪
+▪
+▪
+Analysis Soundness: Are the findings in the Required Analyses logical,
+data-driven, and well-supported? Are theories of action clear?
+Narrative Quality: Are the narratives clear, concise, well-organized, and
+consistent? Do they effectively tell the school's story in relation to the
+standards and characteristics? Is the tone appropriate?
+Consistency: Is there consistency in information and findings across
+different sections of the report (e.g., between analyses and
+characteristic narratives)?
+Compliance: Does the report reflect adherence to Cognia policies and
+assurances?
+Step 3: Compile Feedback (Third week of April 2026)
+QARC members consolidate their findings.
+The QARC Chair compiles a single, comprehensive feedback report detailing
+strengths, weaknesses, specific areas needing revision, and actionable
+recommendations.
+Step 4: Submit Feedback Report (End of Third week of April 2026)
+The QARC Chair submits the formal feedback report to the ASC.
+Step 5: Feedback Discussion (Optional - Fourth week of April 2026)
+The QARC Chair meets with the ASC/Accreditation Coordinator to discuss the
+feedback and clarify any points.
+3. Post-Review
+The ASC is responsible for ensuring the QARC's feedback is appropriately
+addressed by the relevant teams during the revision phase (April-May 2026).
+The QARC's role is advisory; final editorial control rests with the ASC and the
+Principal/Head of School.
+Cognia Standards: Committee
+Assignment, Data Types, Evidence, and
+Directory Mapping
+This section details each Cognia Performance Standard, assigning it to the responsible
+Key Characteristic Working Group (KCWG), outlining the primary data types needed,
+providing examples of possible evidence, and specifying the target location within the /
+home/ubuntu/accreditation_evidence/ directory structure.
+▪
+▪
+▪
+▪
+•
+◦
+◦
+•
+◦
+•
+◦
+•
+•
+Data Type Key: * D: Documentation (Policies, plans, reports, meeting minutes,
+curriculum, handbooks, etc.) * O: Observation (Classroom observations, learning
+environment walkthroughs) * P: Perception (Surveys, interviews, focus groups -
+primarily from Stakeholder Feedback RAT) * Perf: Performance (Student assessment
+results, program outcomes - primarily from Student Performance RAT)
+Key Characteristic 1: Culture of Learning (KCWG)
+Standard 1: Leaders cultivate and sustain a culture that demonstrates respect and
+fairness for all learners and is free from bias. * Committee: Culture of Learning KCWG
+* Data Types: P, D * Evidence Examples: Analyzed stakeholder survey results (respect,
+fairness, bias); Handbook sections on purpose/expectations; Evaluation reports of
+relevant programs (e.g., advisory); Site council minutes/membership lists. * Directory: *
+01_Culture_of_Learning/Standard_1/Evidence_Docs/ (Specific docs) * Link to
+00_Required_Analyses/Stakeholder_Feedback/Analysis_Reports/
+Standard 2: Learners’ well-being is at the heart of the institution’s guiding
+principles, such as mission, purpose, and beliefs. * Committee: Culture of Learning
+KCWG * Data Types: P, D, O * Evidence Examples: Analyzed student survey results
+(academic/non-academic support); Handbook sections on student support systems;
+Classroom observation summaries (engagement, differentiation); Lists/data on
+extracurricular participation; Mission/Vision statements; Process docs for mission
+review. * Directory: * 01_Culture_of_Learning/Standard_2/Evidence_Docs/ *
+Link to 00_Required_Analyses/Stakeholder_Feedback/Analysis_Reports/ *
+Link to 00_Required_Analyses/Learning_Environment/Analysis_Reports/
+Standard 3: Leaders actively engage stakeholders to support the institution’s
+priorities and guiding principles that promote learners’ academic growth and
+well-being. * Committee: Culture of Learning KCWG * Data Types: P, Perf, D * Evidence
+Examples: Analyzed stakeholder survey results (involvement, support); Analyzed
+student performance data (used for priority setting); School Improvement Plan
+(identifying learner priorities); Policy handbook sections on stakeholder involvement. *
+Directory: * 01_Culture_of_Learning/Standard_3/Evidence_Docs/ * Link to
+00_Required_Analyses/Stakeholder_Feedback/Analysis_Reports/ * Link to
+00_Required_Analyses/Student_Performance/Analysis_Reports/ * Link to
+06_Supporting_Documents/Improvement_Plans/
+Standard 4: Learners benefit from a formal structure that fosters positive
+relationships with peers and adults. * Committee: Culture of Learning KCWG * Data
+Types: D, P * Evidence Examples: Master schedule showing advisory/support programs;
+Curriculum materials for SEL/relationship building; Analyzed survey results on student/
+staff relationships. * Directory: * 01_Culture_of_Learning/Standard_4/
+Evidence_Docs/ * Link to 00_Required_Analyses/Stakeholder_Feedback/
+Analysis_Reports/
+Standard 5: Professional staff members embrace effective collegiality and
+collaboration in support of learners. * Committee: Culture of Learning KCWG * Data
+Types: D, P * Evidence Examples: PLC plans/agendas/minutes; Analyzed staff survey
+results on PLC effectiveness/collaboration; Program evaluation data supporting
+collaboration (e.g., project outcomes). * Directory: * 01_Culture_of_Learning/
+Standard_5/Evidence_Docs/ * Link to 00_Required_Analyses/
+Stakeholder_Feedback/Analysis_Reports/ (Staff surveys)
+Standard 6: Professional staff members receive the support they need to strengthen
+their professional practice. * Committee: Culture of Learning KCWG * Data Types: D, P
+* Evidence Examples: Documented procedures for resource requests; Analyzed staff
+surveys on resource availability/support; Mentoring/coaching program documentation
+(structure, participation, effectiveness data). * Directory: *
+01_Culture_of_Learning/Standard_6/Evidence_Docs/ * Link to
+00_Required_Analyses/Stakeholder_Feedback/Analysis_Reports/ (Staff
+surveys)
+Key Characteristic 2: Leadership for Learning (KCWG)
+Standard 7: Leaders guide professional staff members in the continuous
+improvement process focused on learners’ experiences and needs. * Committee:
+Leadership for Learning KCWG * Data Types: D, Perf, P * Evidence Examples:
+Continuous Improvement Plan document; Data reports showing plan implementation
+progress/results/adjustments; Policy/handbook sections on stakeholder involvement in
+improvement; Meeting minutes showing staff engagement. * Directory: *
+02_Leadership_for_Learning/Standard_7/Evidence_Docs/ * Link to
+06_Supporting_Documents/Improvement_Plans/
+Standard 8: The governing authority demonstrates a commitment to learners by
+collaborating with leaders to uphold the institution’s priorities and to drive
+continuous improvement. * Committee: Leadership for Learning KCWG * Data Types:
+D, P * Evidence Examples: Governing authority policy manual; Board meeting minutes
+showing focus on priorities/improvement; Documentation of board training (ethics,
+roles); Analyzed survey results on board collaboration/effectiveness. * Directory: *
+02_Leadership_for_Learning/Standard_8/Evidence_Docs/ * Link to
+06_Supporting_Documents/School_Policies/
+Standard 9: Leaders cultivate effective individual and collective leadership among
+stakeholders. * Committee: Leadership for Learning KCWG * Data Types: D, P *
+Evidence Examples: Documentation of staff/student recognition programs for
+leadership; Analyzed survey results on leadership opportunities; Policy/handbook
+sections identifying leadership roles/opportunities (e.g., committee structures, student
+government). * Directory: * 02_Leadership_for_Learning/Standard_9/
+Evidence_Docs/ * Link to 00_Required_Analyses/Stakeholder_Feedback/
+Analysis_Reports/
+Standard 10: Leaders demonstrate expertise in recruiting, supervising, and
+evaluating professional staff members to optimize learning. * Committee:
+Leadership for Learning KCWG * Data Types: D * Evidence Examples: Staff qualification
+records/certifications; Recruitment materials showing alignment with mission/values;
+Supervision/evaluation instruments and process documentation; Analyzed evaluation
+data showing impact on practice/outcomes; Staff retention data. * Directory:
+02_Leadership_for_Learning/Standard_10/Evidence_Docs/
+Standard 11: Leaders create and maintain institutional structures and processes
+that support learners and staff members in both stable and changing environments.
+* Committee: Leadership for Learning KCWG * Data Types: D * Evidence Examples:
+Emergency/crisis management plans; Staff/student handbooks outlining procedures;
+Communication logs/protocols; Org charts. * Directory: *
+02_Leadership_for_Learning/Standard_11/Evidence_Docs/ * Link to
+06_Supporting_Documents/Handbooks/
+Standard 12: Professional staff members implement curriculum and instruction
+that are aligned for relevancy and effectiveness for each and every learner. *
+Committee: Leadership for Learning KCWG * Data Types: D * Evidence Examples:
+Curriculum maps/guides showing standards alignment; Instructional framework
+documentation; Observation/evaluation instruments referencing instructional model;
+Curriculum review process documentation; Analyzed curriculum assessment results. *
+Directory: 02_Leadership_for_Learning/Standard_12/Evidence_Docs/
+Standard 13: Qualified personnel instruct and assist learners and each other in
+support of the institution’s mission, purpose, and beliefs. * Committee: Leadership
+for Learning KCWG * Data Types: D, P * Evidence Examples: Records of staff
+qualifications/certifications/degrees; Professional development attendance/completion
+records; Analyzed survey data on staff support/effectiveness. * Directory:
+02_Leadership_for_Learning/Standard_13/Evidence_Docs/
+Standard 14: Curriculum and instruction are augmented by reliable information
+resources and materials that advance learning and support learners’ personal
+interests. * Committee: Leadership for Learning KCWG * Data Types: D, P * Evidence
+Examples: Documented process for selecting/validating instructional resources (library,
+digital); Inventory of available resources (library collection data, software licenses);
+Analyzed survey data on resource adequacy/validity. * Directory:
+02_Leadership_for_Learning/Standard_14/Evidence_Docs/
+Standard 15: Learners’ needs drive the allocation and management of human,
+material, digital, and fiscal resources. * Committee: Leadership for Learning KCWG *
+Data Types: D, P * Evidence Examples: Analyzed learner needs assessment data;
+Strategic/Improvement plan sections on resource allocation; Budget documents
+showing alignment with needs/priorities; Analyzed survey data on resource allocation
+effectiveness. * Directory: * 02_Leadership_for_Learning/Standard_15/
+Evidence_Docs/ * Link to 06_Supporting_Documents/Improvement_Plans/
+Key Characteristic 3: Engagement of Learning (KCWG)
+Standard 16: Learners experience curriculum and instruction that emphasize the
+value of different cultures, backgrounds, and abilities reflective of the global
+community. * Committee: Engagement of Learning KCWG * Data Types: D, P, O *
+Evidence Examples: Documentation of DEI initiatives and evaluations; Analyzed survey
+data on culture/respect; Curriculum examples showing integration of diverse cultures/
+perspectives; Classroom observation notes on inclusive environment. * Directory: *
+03_Engagement_of_Learning/Standard_16/Evidence_Docs/ * Link to
+00_Required_Analyses/Stakeholder_Feedback/Analysis_Reports/ * Link to
+00_Required_Analyses/Learning_Environment/Analysis_Reports/
+Standard 17: Learners have the support and opportunities to realize their learning
+potential. * Committee: Engagement of Learning KCWG * Data Types: P, D, O *
+Evidence Examples: Analyzed survey data (student perspectives on support/
+opportunities); Examples of differentiated instruction plans/materials; Sample
+Individualized Learning Plans (ILPs); Course catalogs/program descriptions showing
+choice/access; Classroom observation data on support/challenge. * Directory: *
+03_Engagement_of_Learning/Standard_17/Evidence_Docs/ * Link to
+00_Required_Analyses/Stakeholder_Feedback/Analysis_Reports/ * Link to
+00_Required_Analyses/Learning_Environment/Analysis_Reports/
+Standard 18: Learners are immersed in an environment that fosters lifelong skills
+including creativity, curiosity, risk taking, collaboration, and design thinking. *
+Committee: Engagement of Learning KCWG * Data Types: P, D, O * Evidence Examples:
+Analyzed survey data (student perspectives on environment); Documentation for
+advisory programs, SEL curriculum, project-based learning initiatives; Sample ILPs
+including non-academic skills; Classroom observation data on collaboration, risk-taking,
+etc. * Directory: * 03_Engagement_of_Learning/Standard_18/Evidence_Docs/ *
+Link to 00_Required_Analyses/Stakeholder_Feedback/Analysis_Reports/ *
+Link to 00_Required_Analyses/Learning_Environment/Analysis_Reports/
+Standard 19: Learners are immersed in an environment that promotes and respects
+student agency and responsibility for their learning. * Committee: Engagement of
+Learning KCWG * Data Types: P, O, D * Evidence Examples: Analyzed survey data
+(student perspectives); Classroom observation data (student voice, choice, monitoring
+learning); Sample ILPs showing student input; Examples of student work demonstrating
+self-monitoring/goal setting. * Directory: * 03_Engagement_of_Learning/
+Standard_19/Evidence_Docs/ * Link to 00_Required_Analyses/
+Stakeholder_Feedback/Analysis_Reports/ * Link to 00_Required_Analyses/
+Learning_Environment/Analysis_Reports/
+Standard 20: Learners engage in experiences that promote and develop their selfconfidence
+and love of learning. * Committee: Engagement of Learning KCWG * Data
+Types: D, P, O * Evidence Examples: Information on RTI/support programs; Analyzed
+learner survey data (confidence, motivation, curiosity); Classroom observation data
+(student engagement, risk-taking, excitement). * Directory: *
+03_Engagement_of_Learning/Standard_20/Evidence_Docs/ * Link to
+00_Required_Analyses/Stakeholder_Feedback/Analysis_Reports/ * Link to
+00_Required_Analyses/Learning_Environment/Analysis_Reports/
+Standard 21: Instruction is characterized by high expectations and learner-centered
+practices. * Committee: Engagement of Learning KCWG * Data Types: D, O, Perf *
+Evidence Examples: Sample lesson plans showing high expectations/learner-centered
+practices; Classroom observation data (rigor, differentiation, student engagement);
+Analyzed learner performance data (growth, mastery). * Directory: *
+03_Engagement_of_Learning/Standard_21/Evidence_Docs/ * Link to
+00_Required_Analyses/Learning_Environment/Analysis_Reports/ * Link to
+00_Required_Analyses/Student_Performance/Analysis_Reports/
+Standard 22: Instruction is monitored and adjusted to advance and deepen
+individual learners’ knowledge and understanding of the curriculum. *
+Committee: Engagement of Learning KCWG * Data Types: O, D * Evidence Examples:
+Classroom observation data (use of formative assessment, adjustments); PD plan
+including data analysis training; Meeting minutes/reports showing analysis of formative/
+summative data to adjust instruction/curriculum. * Directory: *
+03_Engagement_of_Learning/Standard_22/Evidence_Docs/ * Link to
+00_Required_Analyses/Learning_Environment/Analysis_Reports/
+Standard 23: Professional staff members integrate digital resources that deepen
+and advance learners’ engagement with instruction and stimulate their curiosity. *
+Committee: Engagement of Learning KCWG * Data Types: D, O * Evidence Examples:
+Technology integration plan; Classroom observation data (effective digital resource use);
+PD records on digital tool integration; Examples of student work using digital tools. *
+Directory: * 03_Engagement_of_Learning/Standard_23/Evidence_Docs/ * Link
+to 00_Required_Analyses/Learning_Environment/Analysis_Reports/
+Key Characteristic 4: Growth in Learning (KCWG)
+Standard 24: Leaders use data and input from a variety of sources to make decisions
+for learners’ and staff members’ growth and well-being. * Committee: Growth in
+Learning KCWG * Data Types: D, P * Evidence Examples: Continuous Improvement Plan
+showing data use for decisions; Analyzed stakeholder survey data (perceptions of
+institution); PD records on data use/analysis; Meeting minutes showing data-informed
+decision making. * Directory: * 04_Growth_in_Learning/Standard_24/
+Evidence_Docs/ * Link to 06_Supporting_Documents/Improvement_Plans/ *
+Link to 00_Required_Analyses/Stakeholder_Feedback/Analysis_Reports/
+Standard 25: Leaders promote action research by professional staff members to
+improve their practice and advance learning. * Committee: Growth in Learning KCWG
+* Data Types: O, D * Evidence Examples: Analysis of classroom observations identifying
+needs; Comprehensive PD plan including action research; Analysis of intervention
+effectiveness; PLC implementation plan/minutes showing inquiry cycles. * Directory: *
+04_Growth_in_Learning/Standard_25/Evidence_Docs/ * Link to
+00_Required_Analyses/Learning_Environment/Analysis_Reports/
+Standard 26: Leaders regularly evaluate instructional programs and organizational
+conditions to improve instruction and advance learning. * Committee: Growth in
+Learning KCWG * Data Types: D * Evidence Examples: Curriculum documents (scope/
+sequence, maps); Curriculum review cycle/plan/minutes; Program evaluation reports
+and analyses; Data showing decisions made based on evaluations (program changes). *
+Directory: 04_Growth_in_Learning/Standard_26/Evidence_Docs/
+Standard 27: Learners’ academic and non-academic needs are identified and
+effectively addressed through appropriate interventions. * Committee: Growth in
+Learning KCWG * Data Types: D, P * Evidence Examples: RTI/MTSS plans and
+effectiveness data; Analyzed student needs assessment data (academic, non-academic);
+Documentation of specific interventions (counseling logs, academic support records);
+Analyzed survey data on effectiveness of support systems. * Directory: *
+04_Growth_in_Learning/Standard_27/Evidence_Docs/ * Link to
+00_Required_Analyses/Stakeholder_Feedback/Analysis_Reports/
+Standard 28: With support, learners pursue individual goals including the
+acquisition of academic and non-academic skills important for their educational
+futures and careers. * Committee: Growth in Learning KCWG * Data Types: D, Perf *
+Evidence Examples: Sample personalized learning plans (showing goals/interests); PD
+plan including goal-setting/personalization training; Examples of learner-led
+conferences, career exploration projects, student progress monitoring tools/reports. *
+Directory: 04_Growth_in_Learning/Standard_28/Evidence_Docs/
+Standard 29: Understanding learners’ needs and interests drives the design,
+delivery, application, and evaluation of professional learning. * Committee: Growth
+in Learning KCWG * Data Types: D, Perf * Evidence Examples: Comprehensive PD plan
+(needs assessment, delivery, evaluation); Analysis reports on PD effectiveness (impact
+on practice/student outcomes); Documentation showing PD topics aligned with student
+performance data/needs. * Directory: 04_Growth_in_Learning/Standard_29/
+Evidence_Docs/
+Standard 30: Learners’ progress is measured through a balanced system that
+includes assessment both for learning and of learning. * Committee: Growth in
+Learning KCWG * Data Types: D * Evidence Examples: Institutional assessment plan
+(detailing formative/summative assessments); Analyzed assessment data showing use
+for planning/modification; Examples of common assessments; PD information on
+assessment literacy/data use; Meeting minutes showing data discussions. * Directory:
+04_Growth_in_Learning/Standard_30/Evidence_Docs/
+Standard 31: Learners demonstrate growth in their academic performance based on
+valid and reliable assessments. * Committee: Growth in Learning KCWG * Data Types:
+Perf, D * Evidence Examples: Analyzed longitudinal student achievement/growth data
+(aggregated/disaggregated); Documentation of assessment validity/reliability; Plans and
+results for targeted interventions; Summaries/examples of communication with
+stakeholders about results/plans. * Directory: * 04_Growth_in_Learning/
+Standard_31/Evidence_Docs/ * Link to 00_Required_Analyses/
+Student_Performance/Analysis_Reports/
