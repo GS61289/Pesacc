@@ -54,4 +54,19 @@ footer { background: #2c3e50; color: #fff; text-align: center; padding: 1.2rem 0
 .data-type-obs { background: #e67e22; }
 .data-type-perc { background: #27ae60; }
 .data-type-perf { background: #8e44ad; }
-.data-type-badge i { font-size: 1em; } 
+.data-type-badge i { font-size: 1em; }
+
+/* Committee Badges for Evidence Table */
+.committee-badge {
+  display: inline-block;
+  padding: 0.18em 0.9em;
+  border-radius: 16px;
+  font-weight: 500;
+  border-left: 6px solid;
+  background: #f8fafd;
+  margin-right: 0.2em;
+}
+.committee-kc1 { border-color: #1a73e8; }
+.committee-kc2 { border-color: #e67e22; }
+.committee-kc3 { border-color: #27ae60; }
+.committee-kc4 { border-color: #8e44ad; } 

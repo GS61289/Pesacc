@@ -7,6 +7,19 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" href="assets/img/favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+  <style>
+    .data-type-badge { display: inline-flex; align-items: center; gap: 0.3rem; font-size: 0.97rem; font-weight: 500; border-radius: 16px; padding: 0.18em 0.8em 0.18em 0.6em; color: #fff; margin-right: 0.2em; }
+    .data-type-doc { background: #1a73e8; }
+    .data-type-obs { background: #e67e22; }
+    .data-type-perc { background: #27ae60; }
+    .data-type-perf { background: #8e44ad; }
+    .data-type-badge i { font-size: 1em; }
+    #evidence-table { width: 100%; font-size: 1rem; }
+    #evidence-table th, #evidence-table td { vertical-align: top; }
+    .dt-search { margin-bottom: 1rem; }
+    @media (max-width: 900px) { #evidence-table { font-size: 0.93rem; } }
+  </style>
 </head>
 <body>
   <header>
@@ -29,16 +42,70 @@
   </header>
   <main>
     <section class="content">
-      <h1>Evidence Directory</h1>
-      <p>This section contains the directory of evidence collected to support the Cognia accreditation process. Evidence may include:</p>
-      <ul>
-        <li>Student performance data</li>
-        <li>Stakeholder feedback</li>
-        <li>Learning environment documentation</li>
-        <li>Meeting minutes and reports</li>
-        <li>Supporting documents and artifacts</li>
-      </ul>
-      <p>Browse and download evidence files as needed (coming soon).</p>
+      <h1>Evidence Map: Standards, Committees, and Data Types</h1>
+      <p>This interactive table shows the overlap between Cognia standards, responsible committees, required data types, and example evidence. Use the search and filter features to quickly find what you need.</p>
+      <label for="committee-filter" style="font-weight:500;">Filter by Committee/Team:</label>
+      <select id="committee-filter" style="margin:0 1.2rem 1.2rem 0.5rem; padding:0.2em 0.7em; font-size:1rem;">
+        <option value="">All</option>
+        <option value="Culture of Learning KCWG">Culture of Learning KCWG</option>
+        <option value="Leadership for Learning KCWG">Leadership for Learning KCWG</option>
+        <option value="Engagement of Learning KCWG">Engagement of Learning KCWG</option>
+        <option value="Growth in Learning KCWG">Growth in Learning KCWG</option>
+      </select>
+      <label for="datatype-filter" style="font-weight:500;">Filter by Data Type:</label>
+      <select id="datatype-filter" style="margin:0 0 1.2rem 0.5rem; padding:0.2em 0.7em; font-size:1rem;">
+        <option value="">All</option>
+        <option value="Documentation">Documentation</option>
+        <option value="Observation">Observation</option>
+        <option value="Perception">Perception</option>
+        <option value="Performance">Performance</option>
+      </select>
+      <table id="evidence-table" class="display">
+        <thead>
+          <tr>
+            <th>Standard</th>
+            <th>Committee/Team</th>
+            <th>Example Evidence</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- KCWG 1: Culture of Learning -->
+          <tr><td>1. Leaders cultivate and sustain a culture that demonstrates respect and fairness for all learners and is free from bias.</td><td><span class="committee-badge committee-kc1">Culture of Learning KCWG</span></td><td><dl class="evidence-dl"><dt><span class="data-type-badge data-type-perc"><i class="fa fa-comments"></i> Perception</span></dt><dd>Analyzed stakeholder survey results (respect, fairness, bias)</dd><dt><span class="data-type-badge data-type-doc"><i class="fa fa-file-alt"></i> Documentation</span></dt><dd>Handbook sections on purpose/expectations; Evaluation reports of relevant programs (e.g., advisory); Site council minutes/membership lists</dd></dl></td></tr>
+          <tr><td>2. Learners' well-being is at the heart of the institution's guiding principles, such as mission, purpose, and beliefs.</td><td><span class="committee-badge committee-kc1">Culture of Learning KCWG</span></td><td><dl class="evidence-dl"><dt><span class="data-type-badge data-type-perc"><i class="fa fa-comments"></i> Perception</span></dt><dd>Analyzed student survey results (academic/non-academic support)</dd><dt><span class="data-type-badge data-type-doc"><i class="fa fa-file-alt"></i> Documentation</span></dt><dd>Handbook sections on student support systems; Mission/Vision statements; Lists/data on extracurricular participation; Process docs for mission review</dd><dt><span class="data-type-badge data-type-obs"><i class="fa fa-eye"></i> Observation</span></dt><dd>Classroom observation summaries (engagement, differentiation)</dd></dl></td></tr>
+          <tr><td>3. Leaders actively engage stakeholders to support the institution's priorities and guiding principles that promote learners' academic growth and well-being.</td><td><span class="committee-badge committee-kc1">Culture of Learning KCWG</span></td><td><dl class="evidence-dl"><dt><span class="data-type-badge data-type-perc"><i class="fa fa-comments"></i> Perception</span></dt><dd>Analyzed stakeholder survey results (involvement, support)</dd><dt><span class="data-type-badge data-type-perf"><i class="fa fa-chart-line"></i> Performance</span></dt><dd>Analyzed student performance data (used for priority setting)</dd><dt><span class="data-type-badge data-type-doc"><i class="fa fa-file-alt"></i> Documentation</span></dt><dd>School Improvement Plan (identifying learner priorities); Policy handbook sections on stakeholder involvement</dd></dl></td></tr>
+          <tr><td>4. Learners benefit from a formal structure that fosters positive relationships with peers and adults.</td><td><span class="committee-badge committee-kc1">Culture of Learning KCWG</span></td><td><dl class="evidence-dl"><dt><span class="data-type-badge data-type-doc"><i class="fa fa-file-alt"></i> Documentation</span></dt><dd>Master schedule showing advisory/support programs; Curriculum materials for SEL/relationship building</dd><dt><span class="data-type-badge data-type-perc"><i class="fa fa-comments"></i> Perception</span></dt><dd>Analyzed survey results on student/staff relationships</dd></dl></td></tr>
+          <tr><td>5. Professional staff members embrace effective collegiality and collaboration in support of learners.</td><td><span class="committee-badge committee-kc1">Culture of Learning KCWG</span></td><td><dl class="evidence-dl"><dt><span class="data-type-badge data-type-doc"><i class="fa fa-file-alt"></i> Documentation</span></dt><dd>PLC plans/agendas/minutes; Program evaluation data supporting collaboration (e.g., project outcomes)</dd><dt><span class="data-type-badge data-type-perc"><i class="fa fa-comments"></i> Perception</span></dt><dd>Analyzed staff survey results on PLC effectiveness/collaboration</dd></dl></td></tr>
+          <tr><td>6. Professional staff members receive the support they need to strengthen their professional practice.</td><td><span class="committee-badge committee-kc1">Culture of Learning KCWG</span></td><td><dl class="evidence-dl"><dt><span class="data-type-badge data-type-doc"><i class="fa fa-file-alt"></i> Documentation</span></dt><dd>Documented procedures for resource requests; Mentoring/coaching program documentation (structure, participation, effectiveness data)</dd><dt><span class="data-type-badge data-type-perc"><i class="fa fa-comments"></i> Perception</span></dt><dd>Analyzed staff surveys on resource availability/support</dd></dl></td></tr>
+          <!-- KCWG 2: Leadership for Learning -->
+          <tr><td>7. Leaders guide professional staff members in the continuous improvement process focused on learners' experiences and needs.</td><td><span class="committee-badge committee-kc2">Leadership for Learning KCWG</span></td><td><dl class="evidence-dl"><dt><span class="data-type-badge data-type-doc"><i class="fa fa-file-alt"></i> Documentation</span></dt><dd>Continuous Improvement Plan document; Data reports showing plan implementation progress/results/adjustments; Policy/handbook sections on stakeholder involvement in improvement; Meeting minutes showing staff engagement</dd></dl></td></tr>
+          <tr><td>8. The governing authority demonstrates a commitment to learners by collaborating with leaders to uphold the institution's priorities and to drive continuous improvement.</td><td><span class="committee-badge committee-kc2">Leadership for Learning KCWG</span></td><td><dl class="evidence-dl"><dt><span class="data-type-badge data-type-doc"><i class="fa fa-file-alt"></i> Documentation</span></dt><dd>Governing authority policy manual; Board meeting minutes showing focus on priorities/improvement; Documentation of board training (ethics, roles)</dd><dt><span class="data-type-badge data-type-perc"><i class="fa fa-comments"></i> Perception</span></dt><dd>Analyzed survey results on board collaboration/effectiveness</dd></dl></td></tr>
+          <tr><td>9. Leaders cultivate effective individual and collective leadership among stakeholders.</td><td><span class="committee-badge committee-kc2">Leadership for Learning KCWG</span></td><td><dl class="evidence-dl"><dt><span class="data-type-badge data-type-doc"><i class="fa fa-file-alt"></i> Documentation</span></dt><dd>Documentation of staff/student recognition programs for leadership; Policy/handbook sections identifying leadership roles/opportunities (e.g., committee structures, student government)</dd><dt><span class="data-type-badge data-type-perc"><i class="fa fa-comments"></i> Perception</span></dt><dd>Analyzed survey results on leadership opportunities</dd></dl></td></tr>
+          <tr><td>10. Leaders demonstrate expertise in recruiting, supervising, and evaluating professional staff members to optimize learning.</td><td><span class="committee-badge committee-kc2">Leadership for Learning KCWG</span></td><td><dl class="evidence-dl"><dt><span class="data-type-badge data-type-doc"><i class="fa fa-file-alt"></i> Documentation</span></dt><dd>Staff qualification records/certifications; Recruitment materials showing alignment with mission/values; Supervision/evaluation instruments and process documentation; Analyzed evaluation data showing impact on practice/outcomes; Staff retention data</dd></dl></td></tr>
+          <tr><td>11. Leaders create and maintain institutional structures and processes that support learners and staff members in both stable and changing environments.</td><td><span class="committee-badge committee-kc2">Leadership for Learning KCWG</span></td><td><dl class="evidence-dl"><dt><span class="data-type-badge data-type-doc"><i class="fa fa-file-alt"></i> Documentation</span></dt><dd>Emergency/crisis management plans; Staff/student handbooks outlining procedures; Communication logs/protocols; Org charts</dd></dl></td></tr>
+          <tr><td>12. Professional staff members implement curriculum and instruction that are aligned for relevancy and effectiveness for each and every learner.</td><td><span class="committee-badge committee-kc2">Leadership for Learning KCWG</span></td><td><dl class="evidence-dl"><dt><span class="data-type-badge data-type-doc"><i class="fa fa-file-alt"></i> Documentation</span></dt><dd>Curriculum maps/guides showing standards alignment; Instructional framework documentation; Observation/evaluation instruments referencing instructional model; Curriculum review process documentation; Analyzed curriculum assessment results</dd></dl></td></tr>
+          <tr><td>13. Qualified personnel instruct and assist learners and each other in support of the institution's mission, purpose, and beliefs.</td><td><span class="committee-badge committee-kc2">Leadership for Learning KCWG</span></td><td><dl class="evidence-dl"><dt><span class="data-type-badge data-type-doc"><i class="fa fa-file-alt"></i> Documentation</span></dt><dd>Records of staff qualifications/certifications/degrees; Professional development attendance/completion records</dd><dt><span class="data-type-badge data-type-perc"><i class="fa fa-comments"></i> Perception</span></dt><dd>Analyzed survey data on staff support/effectiveness</dd></dl></td></tr>
+          <tr><td>14. Curriculum and instruction are augmented by reliable information resources and materials that advance learning and support learners' personal interests.</td><td><span class="committee-badge committee-kc2">Leadership for Learning KCWG</span></td><td><dl class="evidence-dl"><dt><span class="data-type-badge data-type-doc"><i class="fa fa-file-alt"></i> Documentation</span></dt><dd>Documented process for selecting/validating instructional resources (library, digital); Inventory of available resources (library collection data, software licenses)</dd><dt><span class="data-type-badge data-type-perc"><i class="fa fa-comments"></i> Perception</span></dt><dd>Analyzed survey data on resource adequacy/validity</dd></dl></td></tr>
+          <tr><td>15. Learners' needs drive the allocation and management of human, material, digital, and fiscal resources.</td><td><span class="committee-badge committee-kc2">Leadership for Learning KCWG</span></td><td><dl class="evidence-dl"><dt><span class="data-type-badge data-type-doc"><i class="fa fa-file-alt"></i> Documentation</span></dt><dd>Analyzed learner needs assessment data; Strategic/Improvement plan sections on resource allocation; Budget documents showing alignment with needs/priorities</dd><dt><span class="data-type-badge data-type-perc"><i class="fa fa-comments"></i> Perception</span></dt><dd>Analyzed survey data on resource allocation effectiveness</dd></dl></td></tr>
+          <!-- KCWG 3: Engagement of Learning -->
+          <tr><td>16. Learners experience curriculum and instruction that emphasize the value of different cultures, backgrounds, and abilities reflective of the global community.</td><td><span class="committee-badge committee-kc3">Engagement of Learning KCWG</span></td><td><dl class="evidence-dl"><dt><span class="data-type-badge data-type-doc"><i class="fa fa-file-alt"></i> Documentation</span></dt><dd>Documentation of DEI initiatives and evaluations; Curriculum examples showing integration of diverse cultures/perspectives</dd><dt><span class="data-type-badge data-type-perc"><i class="fa fa-comments"></i> Perception</span></dt><dd>Analyzed survey data on culture/respect</dd><dt><span class="data-type-badge data-type-obs"><i class="fa fa-eye"></i> Observation</span></dt><dd>Classroom observation notes on inclusive environment</dd></dl></td></tr>
+          <tr><td>17. Learners have the support and opportunities to realize their learning potential.</td><td><span class="committee-badge committee-kc3">Engagement of Learning KCWG</span></td><td><dl class="evidence-dl"><dt><span class="data-type-badge data-type-perc"><i class="fa fa-comments"></i> Perception</span></dt><dd>Analyzed survey data (student perspectives on support/opportunities)</dd><dt><span class="data-type-badge data-type-doc"><i class="fa fa-file-alt"></i> Documentation</span></dt><dd>Examples of differentiated instruction plans/materials; Sample Individualized Learning Plans (ILPs); Course catalogs/program descriptions showing choice/access</dd><dt><span class="data-type-badge data-type-obs"><i class="fa fa-eye"></i> Observation</span></dt><dd>Classroom observation data on support/challenge</dd></dl></td></tr>
+          <tr><td>18. Learners are immersed in an environment that fosters lifelong skills including creativity, curiosity, risk taking, collaboration, and design thinking.</td><td><span class="committee-badge committee-kc3">Engagement of Learning KCWG</span></td><td><dl class="evidence-dl"><dt><span class="data-type-badge data-type-perc"><i class="fa fa-comments"></i> Perception</span></dt><dd>Analyzed survey data (student perspectives on environment)</dd><dt><span class="data-type-badge data-type-doc"><i class="fa fa-file-alt"></i> Documentation</span></dt><dd>Documentation for advisory programs, SEL curriculum, project-based learning initiatives; Sample ILPs including non-academic skills</dd><dt><span class="data-type-badge data-type-obs"><i class="fa fa-eye"></i> Observation</span></dt><dd>Classroom observation data on collaboration, risk-taking, etc.</dd></dl></td></tr>
+          <tr><td>19. Learners are immersed in an environment that promotes and respects student agency and responsibility for their learning.</td><td><span class="committee-badge committee-kc3">Engagement of Learning KCWG</span></td><td><dl class="evidence-dl"><dt><span class="data-type-badge data-type-perc"><i class="fa fa-comments"></i> Perception</span></dt><dd>Analyzed survey data (student perspectives)</dd><dt><span class="data-type-badge data-type-obs"><i class="fa fa-eye"></i> Observation</span></dt><dd>Classroom observation data (student voice, choice, monitoring learning)</dd><dt><span class="data-type-badge data-type-doc"><i class="fa fa-file-alt"></i> Documentation</span></dt><dd>Sample ILPs showing student input; Examples of student work demonstrating self-monitoring/goal setting</dd></dl></td></tr>
+          <tr><td>20. Learners engage in experiences that promote and develop their self-confidence and love of learning.</td><td><span class="committee-badge committee-kc3">Engagement of Learning KCWG</span></td><td><dl class="evidence-dl"><dt><span class="data-type-badge data-type-doc"><i class="fa fa-file-alt"></i> Documentation</span></dt><dd>Information on RTI/support programs</dd><dt><span class="data-type-badge data-type-perc"><i class="fa fa-comments"></i> Perception</span></dt><dd>Analyzed learner survey data (confidence, motivation, curiosity)</dd><dt><span class="data-type-badge data-type-obs"><i class="fa fa-eye"></i> Observation</span></dt><dd>Classroom observation data (student engagement, risk-taking, excitement)</dd></dl></td></tr>
+          <tr><td>21. Instruction is characterized by high expectations and learner-centered practices.</td><td><span class="committee-badge committee-kc3">Engagement of Learning KCWG</span></td><td><dl class="evidence-dl"><dt><span class="data-type-badge data-type-doc"><i class="fa fa-file-alt"></i> Documentation</span></dt><dd>Sample lesson plans showing high expectations/learner-centered practices</dd><dt><span class="data-type-badge data-type-obs"><i class="fa fa-eye"></i> Observation</span></dt><dd>Classroom observation data (rigor, differentiation, student engagement)</dd><dt><span class="data-type-badge data-type-perf"><i class="fa fa-chart-line"></i> Performance</span></dt><dd>Analyzed learner performance data (growth, mastery)</dd></dl></td></tr>
+          <tr><td>22. Instruction is monitored and adjusted to advance and deepen individual learners' knowledge and understanding of the curriculum.</td><td><span class="committee-badge committee-kc3">Engagement of Learning KCWG</span></td><td><dl class="evidence-dl"><dt><span class="data-type-badge data-type-obs"><i class="fa fa-eye"></i> Observation</span></dt><dd>Classroom observation data (use of formative assessment, adjustments)</dd><dt><span class="data-type-badge data-type-doc"><i class="fa fa-file-alt"></i> Documentation</span></dt><dd>PD plan including data analysis training; Meeting minutes/reports showing analysis of formative/summative data to adjust instruction/curriculum</dd></dl></td></tr>
+          <tr><td>23. Professional staff members integrate digital resources that deepen and advance learners' engagement with instruction and stimulate their curiosity.</td><td><span class="committee-badge committee-kc3">Engagement of Learning KCWG</span></td><td><dl class="evidence-dl"><dt><span class="data-type-badge data-type-doc"><i class="fa fa-file-alt"></i> Documentation</span></dt><dd>Technology integration plan; PD records on digital tool integration; Examples of student work using digital tools</dd><dt><span class="data-type-badge data-type-obs"><i class="fa fa-eye"></i> Observation</span></dt><dd>Classroom observation data (effective digital resource use)</dd></dl></td></tr>
+          <!-- KCWG 4: Growth in Learning -->
+          <tr><td>24. Leaders use data and input from a variety of sources to make decisions for learners' and staff members' growth and well-being.</td><td><span class="committee-badge committee-kc4">Growth in Learning KCWG</span></td><td><dl class="evidence-dl"><dt><span class="data-type-badge data-type-doc"><i class="fa fa-file-alt"></i> Documentation</span></dt><dd>School Improvement Plan; PD records; Meeting minutes showing data-driven decisions</dd><dt><span class="data-type-badge data-type-perc"><i class="fa fa-comments"></i> Perception</span></dt><dd>Survey data (staff, student, parent)</dd></dl></td></tr>
+          <tr><td>25. The institution implements a process to continuously assess and improve organizational effectiveness.</td><td><span class="committee-badge committee-kc4">Growth in Learning KCWG</span></td><td><dl class="evidence-dl"><dt><span class="data-type-badge data-type-doc"><i class="fa fa-file-alt"></i> Documentation</span></dt><dd>Continuous improvement process documentation; Annual review reports; Action plan updates</dd></dl></td></tr>
+          <tr><td>26. The institution provides opportunities for learners to develop skills for future success.</td><td><span class="committee-badge committee-kc4">Growth in Learning KCWG</span></td><td><dl class="evidence-dl"><dt><span class="data-type-badge data-type-doc"><i class="fa fa-file-alt"></i> Documentation</span></dt><dd>Career readiness program materials; College/career counseling records; Student portfolios</dd><dt><span class="data-type-badge data-type-perf"><i class="fa fa-chart-line"></i> Performance</span></dt><dd>Post-graduation data (college acceptance, employment)</dd></dl></td></tr>
+          <tr><td>27. The institution implements a process to monitor and ensure learners' well-being and safety.</td><td><span class="committee-badge committee-kc4">Growth in Learning KCWG</span></td><td><dl class="evidence-dl"><dt><span class="data-type-badge data-type-doc"><i class="fa fa-file-alt"></i> Documentation</span></dt><dd>Safety protocols; Incident reports; Counseling program documentation</dd><dt><span class="data-type-badge data-type-perc"><i class="fa fa-comments"></i> Perception</span></dt><dd>Survey data (student, parent perceptions of safety)</dd></dl></td></tr>
+          <tr><td>28. The institution provides professional learning opportunities to improve staff effectiveness and student learning.</td><td><span class="committee-badge committee-kc4">Growth in Learning KCWG</span></td><td><dl class="evidence-dl"><dt><span class="data-type-badge data-type-doc"><i class="fa fa-file-alt"></i> Documentation</span></dt><dd>PD plan; PD attendance records; Staff feedback on PD</dd></dl></td></tr>
+          <tr><td>29. The institution implements a process to recruit, hire, and retain qualified professional staff members.</td><td><span class="committee-badge committee-kc4">Growth in Learning KCWG</span></td><td><dl class="evidence-dl"><dt><span class="data-type-badge data-type-doc"><i class="fa fa-file-alt"></i> Documentation</span></dt><dd>Recruitment and hiring policies; Staff retention data; Induction/mentoring program documentation</dd></dl></td></tr>
+          <tr><td>30. The institution provides access to resources and services to support learners' needs.</td><td><span class="committee-badge committee-kc4">Growth in Learning KCWG</span></td><td><dl class="evidence-dl"><dt><span class="data-type-badge data-type-doc"><i class="fa fa-file-alt"></i> Documentation</span></dt><dd>Resource allocation plan; Support services documentation; Student support team meeting minutes</dd></dl></td></tr>
+          <tr><td>31. The institution implements a process to monitor and ensure the effectiveness of its programs and services.</td><td><span class="committee-badge committee-kc4">Growth in Learning KCWG</span></td><td><dl class="evidence-dl"><dt><span class="data-type-badge data-type-doc"><i class="fa fa-file-alt"></i> Documentation</span></dt><dd>Program evaluation reports; Service effectiveness data; Action plan updates</dd></dl></td></tr>
+        </tbody>
+      </table>
     </section>
   </main>
   <footer>
@@ -48,5 +115,38 @@
     </div>
   </footer>
   <script src="assets/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var table = $('#evidence-table').DataTable({
+        responsive: true,
+        pageLength: 10,
+        lengthMenu: [5, 10, 25, 50, 100],
+        language: { search: "Search/filter:" }
+      });
+      // Custom filter for Data Type
+      $.fn.dataTable.ext.search.push(function(settings, data, dataIndex) {
+        var datatype = $('#datatype-filter').val();
+        if (!datatype) return true;
+        var classMap = {
+          'Documentation': 'data-type-doc',
+          'Observation': 'data-type-obs',
+          'Perception': 'data-type-perc',
+          'Performance': 'data-type-perf'
+        };
+        var className = classMap[datatype];
+        // Get the HTML of the Example Evidence cell
+        var cellHtml = table.cell(dataIndex, 2).nodes().to$().html();
+        return cellHtml && cellHtml.indexOf(className) !== -1;
+      });
+      function filterTable() {
+        var committee = $('#committee-filter').val();
+        table.column(1).search(committee, false, false);
+        table.draw();
+      }
+      $('#committee-filter, #datatype-filter').on('change', filterTable);
+    });
+  </script>
 </body>
 </html> 
