@@ -6,7 +6,7 @@ a:hover { text-decoration: underline; }
 
 /* Header and Navigation */
 header { background: #2c3e50; color: #fff; position: sticky; top: 0; z-index: 100; }
-.navbar { display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: 0 auto; padding: 0.5rem 1rem; }
+.navbar { display: flex; align-items: center; justify-content: space-between; max-width: 1400px; margin: 0 auto; padding: 0.5rem 2.5rem; }
 .logo { font-size: 1.3rem; font-weight: bold; display: flex; align-items: center; gap: 0.5rem; }
 .nav-links { list-style: none; display: flex; gap: 1rem; }
 .nav-links li a { color: #fff; padding: 0.5rem 1rem; border-radius: 4px; transition: background 0.2s; display: flex; align-items: center; gap: 0.5rem; font-weight: 500; }
@@ -32,13 +32,26 @@ footer { background: #2c3e50; color: #fff; text-align: center; padding: 1.2rem 0
 .footer-content a:hover { text-decoration: underline; }
 
 /* Responsive Styles */
+@media (max-width: 1200px) {
+  .navbar { padding: 0.5rem 1rem; }
+  .nav-links { gap: 0.7rem; }
+}
 @media (max-width: 900px) {
   .content { padding: 1.2rem 0.7rem; }
-  .navbar { flex-direction: column; align-items: flex-start; }
+  .navbar { flex-direction: column; align-items: flex-start; max-width: 100%; padding: 0.5rem 0.5rem; }
 }
 @media (max-width: 700px) {
   .nav-links { display: none; flex-direction: column; width: 100%; background: #2c3e50; position: absolute; top: 60px; left: 0; }
   .nav-links.open { display: flex; }
   .nav-toggle { display: block; }
   .navbar { position: relative; }
-} 
+}
+
+/* Data Type Badges */
+.data-type-badges { display: flex; gap: 0.5rem; margin: 0.5rem 0 0.7rem 0; flex-wrap: wrap; }
+.data-type-badge { display: flex; align-items: center; gap: 0.3rem; font-size: 0.97rem; font-weight: 500; border-radius: 16px; padding: 0.18em 0.8em 0.18em 0.6em; color: #fff; }
+.data-type-doc { background: #1a73e8; }
+.data-type-obs { background: #e67e22; }
+.data-type-perc { background: #27ae60; }
+.data-type-perf { background: #8e44ad; }
+.data-type-badge i { font-size: 1em; } 
