@@ -7,6 +7,50 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" href="assets/img/favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .kc-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin: 2rem 0 2.5rem 0;
+    }
+    .kc-btn {
+      flex: 1 1 180px;
+      max-width: 260px;
+      padding: 1.2rem 1rem;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.1s, box-shadow 0.2s;
+      box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+    }
+    .kc-btn.kc1 { background: #1a73e8; }
+    .kc-btn.kc2 { background: #e67e22; }
+    .kc-btn.kc3 { background: #27ae60; }
+    .kc-btn.kc4 { background: #8e44ad; }
+    .kc-btn.active, .kc-btn:focus { outline: 3px solid #222; transform: scale(1.04); }
+    .kc-section { display: none; }
+    .kc-section.active { display: block; }
+    .kc-section.kc1 .standard-block { border-left: 4px solid #1a73e8; }
+    .kc-section.kc2 .standard-block { border-left: 4px solid #e67e22; }
+    .kc-section.kc3 .standard-block { border-left: 4px solid #27ae60; }
+    .kc-section.kc4 .standard-block { border-left: 4px solid #8e44ad; }
+    .kc-section.kc1 .standard-block h3 { color: #1a73e8; }
+    .kc-section.kc2 .standard-block h3 { color: #e67e22; }
+    .kc-section.kc3 .standard-block h3 { color: #27ae60; }
+    .kc-section.kc4 .standard-block h3 { color: #8e44ad; }
+    .standard-block { margin: 1rem 0 1.5rem 1.5rem; padding: 1rem; background: #f4f8fb; border-radius: 6px; }
+    .standard-block ul { margin: 0.3rem 0 0.7rem 1.2rem; }
+    .standard-meta { font-size: 0.97rem; color: #444; margin-bottom: 0.2rem; }
+    @media (max-width: 700px) {
+      .kc-buttons { flex-direction: column; gap: 0.7rem; }
+      .kc-btn { max-width: 100%; }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -29,14 +73,327 @@
   <main>
     <section class="content">
       <h1>Cognia Accreditation Standards</h1>
-      <p>The Cognia accreditation process is based on a set of rigorous standards. Below are the main standards:</p>
-      <ul>
-        <li>Culture of Learning</li>
-        <li>Leadership for Learning</li>
-        <li>Engagement of Learning</li>
-        <li>Growth in Learning</li>
-      </ul>
-      <p>Click on each standard for more details (coming soon).</p>
+      <p>The Cognia accreditation process is based on a set of rigorous standards, grouped under four Key Characteristics. Click a Key Characteristic below to view its standards, responsible teams, data types, and example evidence.</p>
+      <div class="kc-buttons">
+        <button class="kc-btn kc1 active" data-kc="kc1">Culture of Learning</button>
+        <button class="kc-btn kc2" data-kc="kc2">Leadership for Learning</button>
+        <button class="kc-btn kc3" data-kc="kc3">Engagement of Learning</button>
+        <button class="kc-btn kc4" data-kc="kc4">Growth in Learning</button>
+      </div>
+      <div class="kc-section kc1 active">
+        <!-- Standards 1-6 blocks here -->
+        <div class="standard-block">
+          <h3>Standard 1: Leaders cultivate and sustain a culture that demonstrates respect and fairness for all learners and is free from bias.</h3>
+          <div class="standard-meta">Committee: Culture of Learning KCWG | Data Types: Perception, Documentation</div>
+          <ul>
+            <li>Analyzed stakeholder survey results (respect, fairness, bias)</li>
+            <li>Handbook sections on purpose/expectations</li>
+            <li>Evaluation reports of relevant programs</li>
+            <li>Site council minutes/membership lists</li>
+          </ul>
+        </div>
+        <div class="standard-block">
+          <h3>Standard 2: Learners' well-being is at the heart of the institution's guiding principles, such as mission, purpose, and beliefs.</h3>
+          <div class="standard-meta">Committee: Culture of Learning KCWG | Data Types: Perception, Documentation, Observation</div>
+          <ul>
+            <li>Analyzed student survey results (support systems)</li>
+            <li>Handbook sections on student support</li>
+            <li>Classroom observation summaries</li>
+            <li>Mission/Vision statements</li>
+          </ul>
+        </div>
+        <div class="standard-block">
+          <h3>Standard 3: Leaders actively engage stakeholders to support the institution's priorities and guiding principles that promote learners' academic growth and well-being.</h3>
+          <div class="standard-meta">Committee: Culture of Learning KCWG | Data Types: Perception, Performance, Documentation</div>
+          <ul>
+            <li>Stakeholder survey results (involvement, support)</li>
+            <li>Student performance data (priority setting)</li>
+            <li>School Improvement Plan</li>
+            <li>Policy handbook sections on stakeholder involvement</li>
+          </ul>
+        </div>
+        <div class="standard-block">
+          <h3>Standard 4: Learners benefit from a formal structure that fosters positive relationships with peers and adults.</h3>
+          <div class="standard-meta">Committee: Culture of Learning KCWG | Data Types: Documentation, Perception</div>
+          <ul>
+            <li>Master schedule showing advisory/support programs</li>
+            <li>Curriculum materials for SEL/relationship building</li>
+            <li>Survey results on student/staff relationships</li>
+          </ul>
+        </div>
+        <div class="standard-block">
+          <h3>Standard 5: Professional staff members embrace effective collegiality and collaboration in support of learners.</h3>
+          <div class="standard-meta">Committee: Culture of Learning KCWG | Data Types: Documentation, Perception</div>
+          <ul>
+            <li>PLC plans/agendas/minutes</li>
+            <li>Staff survey results on PLC effectiveness</li>
+            <li>Program evaluation data supporting collaboration</li>
+          </ul>
+        </div>
+        <div class="standard-block">
+          <h3>Standard 6: Professional staff members receive the support they need to strengthen their professional practice.</h3>
+          <div class="standard-meta">Committee: Culture of Learning KCWG | Data Types: Documentation, Perception</div>
+          <ul>
+            <li>Procedures for resource requests</li>
+            <li>Staff surveys on resource availability/support</li>
+            <li>Mentoring/coaching program documentation</li>
+          </ul>
+        </div>
+      </div>
+      <div class="kc-section kc2">
+        <!-- Standards 7-15 blocks here -->
+        <div class="standard-block">
+          <h3>Standard 7: Leaders guide professional staff members in the continuous improvement process focused on learners' experiences and needs.</h3>
+          <div class="standard-meta">Committee: Leadership for Learning KCWG | Data Types: Documentation, Performance, Perception</div>
+          <ul>
+            <li>Continuous Improvement Plan document</li>
+            <li>Data reports showing plan implementation</li>
+            <li>Policy/handbook sections on stakeholder involvement</li>
+            <li>Meeting minutes showing staff engagement</li>
+          </ul>
+        </div>
+        <div class="standard-block">
+          <h3>Standard 8: The governing authority demonstrates a commitment to learners by collaborating with leaders to uphold the institution's priorities and to drive continuous improvement.</h3>
+          <div class="standard-meta">Committee: Leadership for Learning KCWG | Data Types: Documentation, Perception</div>
+          <ul>
+            <li>Governing authority policy manual</li>
+            <li>Board meeting minutes</li>
+            <li>Documentation of board training</li>
+            <li>Survey results on board collaboration</li>
+          </ul>
+        </div>
+        <div class="standard-block">
+          <h3>Standard 9: Leaders cultivate effective individual and collective leadership among stakeholders.</h3>
+          <div class="standard-meta">Committee: Leadership for Learning KCWG | Data Types: Documentation, Perception</div>
+          <ul>
+            <li>Staff/student recognition programs</li>
+            <li>Survey results on leadership opportunities</li>
+            <li>Policy/handbook sections on leadership roles</li>
+          </ul>
+        </div>
+        <div class="standard-block">
+          <h3>Standard 10: Leaders demonstrate expertise in recruiting, supervising, and evaluating professional staff members to optimize learning.</h3>
+          <div class="standard-meta">Committee: Leadership for Learning KCWG | Data Types: Documentation</div>
+          <ul>
+            <li>Staff qualification records/certifications</li>
+            <li>Recruitment materials</li>
+            <li>Supervision/evaluation instruments</li>
+            <li>Staff retention data</li>
+          </ul>
+        </div>
+        <div class="standard-block">
+          <h3>Standard 11: Leaders create and maintain institutional structures and processes that support learners and staff members in both stable and changing environments.</h3>
+          <div class="standard-meta">Committee: Leadership for Learning KCWG | Data Types: Documentation</div>
+          <ul>
+            <li>Emergency/crisis management plans</li>
+            <li>Handbooks outlining procedures</li>
+            <li>Communication logs/protocols</li>
+            <li>Org charts</li>
+          </ul>
+        </div>
+        <div class="standard-block">
+          <h3>Standard 12: Professional staff members implement curriculum and instruction that are aligned for relevancy and effectiveness for each and every learner.</h3>
+          <div class="standard-meta">Committee: Leadership for Learning KCWG | Data Types: Documentation</div>
+          <ul>
+            <li>Curriculum maps/guides</li>
+            <li>Instructional framework documentation</li>
+            <li>Observation/evaluation instruments</li>
+            <li>Curriculum review process documentation</li>
+          </ul>
+        </div>
+        <div class="standard-block">
+          <h3>Standard 13: Qualified personnel instruct and assist learners and each other in support of the institution's mission, purpose, and beliefs.</h3>
+          <div class="standard-meta">Committee: Leadership for Learning KCWG | Data Types: Documentation, Perception</div>
+          <ul>
+            <li>Records of staff qualifications/certifications</li>
+            <li>Professional development attendance records</li>
+            <li>Survey data on staff support/effectiveness</li>
+          </ul>
+        </div>
+        <div class="standard-block">
+          <h3>Standard 14: Curriculum and instruction are augmented by reliable information resources and materials that advance learning and support learners' personal interests.</h3>
+          <div class="standard-meta">Committee: Leadership for Learning KCWG | Data Types: Documentation, Perception</div>
+          <ul>
+            <li>Process for selecting instructional resources</li>
+            <li>Inventory of available resources</li>
+            <li>Survey data on resource adequacy</li>
+          </ul>
+        </div>
+        <div class="standard-block">
+          <h3>Standard 15: Learners' needs drive the allocation and management of human, material, digital, and fiscal resources.</h3>
+          <div class="standard-meta">Committee: Leadership for Learning KCWG | Data Types: Documentation, Perception</div>
+          <ul>
+            <li>Learner needs assessment data</li>
+            <li>Strategic/Improvement plan sections</li>
+            <li>Budget documents</li>
+            <li>Survey data on resource allocation</li>
+          </ul>
+        </div>
+      </div>
+      <div class="kc-section kc3">
+        <!-- Standards 16-23 blocks here -->
+        <div class="standard-block">
+          <h3>Standard 16: Learners experience curriculum and instruction that emphasize the value of different cultures, backgrounds, and abilities reflective of the global community.</h3>
+          <div class="standard-meta">Committee: Engagement of Learning KCWG | Data Types: Documentation, Perception, Observation</div>
+          <ul>
+            <li>Documentation of DEI initiatives</li>
+            <li>Survey data on culture/respect</li>
+            <li>Curriculum examples showing integration of diverse cultures</li>
+            <li>Classroom observation notes</li>
+          </ul>
+        </div>
+        <div class="standard-block">
+          <h3>Standard 17: Learners have the support and opportunities to realize their learning potential.</h3>
+          <div class="standard-meta">Committee: Engagement of Learning KCWG | Data Types: Perception, Documentation, Observation</div>
+          <ul>
+            <li>Survey data (student perspectives on support)</li>
+            <li>Differentiated instruction plans/materials</li>
+            <li>Individualized Learning Plans (ILPs)</li>
+            <li>Course catalogs/program descriptions</li>
+            <li>Classroom observation data</li>
+          </ul>
+        </div>
+        <div class="standard-block">
+          <h3>Standard 18: Learners are immersed in an environment that fosters lifelong skills including creativity, curiosity, risk taking, collaboration, and design thinking.</h3>
+          <div class="standard-meta">Committee: Engagement of Learning KCWG | Data Types: Perception, Documentation, Observation</div>
+          <ul>
+            <li>Survey data (student perspectives on environment)</li>
+            <li>Documentation for advisory programs, SEL curriculum</li>
+            <li>Sample ILPs including non-academic skills</li>
+            <li>Classroom observation data on collaboration, risk-taking</li>
+          </ul>
+        </div>
+        <div class="standard-block">
+          <h3>Standard 19: Learners are immersed in an environment that promotes and respects student agency and responsibility for their learning.</h3>
+          <div class="standard-meta">Committee: Engagement of Learning KCWG | Data Types: Perception, Observation, Documentation</div>
+          <ul>
+            <li>Survey data (student perspectives)</li>
+            <li>Classroom observation data (student voice, choice)</li>
+            <li>Sample ILPs showing student input</li>
+            <li>Examples of student work demonstrating self-monitoring</li>
+          </ul>
+        </div>
+        <div class="standard-block">
+          <h3>Standard 20: Learners engage in experiences that promote and develop their self-confidence and love of learning.</h3>
+          <div class="standard-meta">Committee: Engagement of Learning KCWG | Data Types: Documentation, Perception, Observation</div>
+          <ul>
+            <li>Information on RTI/support programs</li>
+            <li>Learner survey data (confidence, motivation, curiosity)</li>
+            <li>Classroom observation data (student engagement)</li>
+          </ul>
+        </div>
+        <div class="standard-block">
+          <h3>Standard 21: Instruction is characterized by high expectations and learner-centered practices.</h3>
+          <div class="standard-meta">Committee: Engagement of Learning KCWG | Data Types: Documentation, Observation, Performance</div>
+          <ul>
+            <li>Lesson plans showing high expectations</li>
+            <li>Classroom observation data (rigor, differentiation)</li>
+            <li>Learner performance data (growth, mastery)</li>
+          </ul>
+        </div>
+        <div class="standard-block">
+          <h3>Standard 22: Instruction is monitored and adjusted to advance and deepen individual learners' knowledge and understanding of the curriculum.</h3>
+          <div class="standard-meta">Committee: Engagement of Learning KCWG | Data Types: Observation, Documentation</div>
+          <ul>
+            <li>Classroom observation data (formative assessment)</li>
+            <li>PD plan including data analysis training</li>
+            <li>Meeting minutes/reports showing data analysis</li>
+          </ul>
+        </div>
+        <div class="standard-block">
+          <h3>Standard 23: Professional staff members integrate digital resources that deepen and advance learners' engagement with instruction and stimulate their curiosity.</h3>
+          <div class="standard-meta">Committee: Engagement of Learning KCWG | Data Types: Documentation, Observation</div>
+          <ul>
+            <li>Technology integration plan</li>
+            <li>Classroom observation data (digital resource use)</li>
+            <li>PD records on digital tool integration</li>
+            <li>Examples of student work using digital tools</li>
+          </ul>
+        </div>
+      </div>
+      <div class="kc-section kc4">
+        <!-- Standards 24-31 blocks here -->
+        <div class="standard-block">
+          <h3>Standard 24: Leaders use data and input from a variety of sources to make decisions for learners' and staff members' growth and well-being.</h3>
+          <div class="standard-meta">Committee: Growth in Learning KCWG | Data Types: Documentation, Perception</div>
+          <ul>
+            <li>Continuous Improvement Plan showing data use</li>
+            <li>Stakeholder survey data (perceptions of institution)</li>
+            <li>PD records on data use/analysis</li>
+            <li>Meeting minutes showing data-informed decision making</li>
+          </ul>
+        </div>
+        <div class="standard-block">
+          <h3>Standard 25: Leaders promote action research by professional staff members to improve their practice and advance learning.</h3>
+          <div class="standard-meta">Committee: Growth in Learning KCWG | Data Types: Observation, Documentation</div>
+          <ul>
+            <li>Analysis of classroom observations identifying needs</li>
+            <li>Comprehensive PD plan including action research</li>
+            <li>Analysis of intervention effectiveness</li>
+            <li>PLC implementation plan/minutes showing inquiry cycles</li>
+          </ul>
+        </div>
+        <div class="standard-block">
+          <h3>Standard 26: Leaders regularly evaluate instructional programs and organizational conditions to improve instruction and advance learning.</h3>
+          <div class="standard-meta">Committee: Growth in Learning KCWG | Data Types: Documentation</div>
+          <ul>
+            <li>Curriculum documents (scope/sequence, maps)</li>
+            <li>Curriculum review cycle/plan/minutes</li>
+            <li>Program evaluation reports and analyses</li>
+            <li>Data showing decisions made based on evaluations</li>
+          </ul>
+        </div>
+        <div class="standard-block">
+          <h3>Standard 27: Learners' academic and non-academic needs are identified and effectively addressed through appropriate interventions.</h3>
+          <div class="standard-meta">Committee: Growth in Learning KCWG | Data Types: Documentation, Perception</div>
+          <ul>
+            <li>RTI/MTSS plans and effectiveness data</li>
+            <li>Student needs assessment data</li>
+            <li>Documentation of specific interventions</li>
+            <li>Survey data on effectiveness of support systems</li>
+          </ul>
+        </div>
+        <div class="standard-block">
+          <h3>Standard 28: With support, learners pursue individual goals including the acquisition of academic and non-academic skills important for their educational futures and careers.</h3>
+          <div class="standard-meta">Committee: Growth in Learning KCWG | Data Types: Documentation, Performance</div>
+          <ul>
+            <li>Personalized learning plans (goals/interests)</li>
+            <li>PD plan including goal-setting/personalization training</li>
+            <li>Learner-led conferences, career exploration projects</li>
+            <li>Student progress monitoring tools/reports</li>
+          </ul>
+        </div>
+        <div class="standard-block">
+          <h3>Standard 29: Understanding learners' needs and interests drives the design, delivery, application, and evaluation of professional learning.</h3>
+          <div class="standard-meta">Committee: Growth in Learning KCWG | Data Types: Documentation, Performance</div>
+          <ul>
+            <li>Comprehensive PD plan (needs assessment, delivery, evaluation)</li>
+            <li>Analysis reports on PD effectiveness</li>
+            <li>Documentation showing PD topics aligned with student needs</li>
+          </ul>
+        </div>
+        <div class="standard-block">
+          <h3>Standard 30: Learners' progress is measured through a balanced system that includes assessment both for learning and of learning.</h3>
+          <div class="standard-meta">Committee: Growth in Learning KCWG | Data Types: Documentation</div>
+          <ul>
+            <li>Institutional assessment plan</li>
+            <li>Assessment data showing use for planning/modification</li>
+            <li>Examples of common assessments</li>
+            <li>PD information on assessment literacy/data use</li>
+            <li>Meeting minutes showing data discussions</li>
+          </ul>
+        </div>
+        <div class="standard-block">
+          <h3>Standard 31: Learners demonstrate growth in their academic performance based on valid and reliable assessments.</h3>
+          <div class="standard-meta">Committee: Growth in Learning KCWG | Data Types: Performance, Documentation</div>
+          <ul>
+            <li>Longitudinal student achievement/growth data</li>
+            <li>Documentation of assessment validity/reliability</li>
+            <li>Plans and results for targeted interventions</li>
+            <li>Summaries/examples of communication with stakeholders</li>
+          </ul>
+        </div>
+      </div>
     </section>
   </main>
   <footer>
@@ -46,5 +403,26 @@
     </div>
   </footer>
   <script src="assets/js/main.js"></script>
+  <script>
+    // KC button toggling
+    document.addEventListener('DOMContentLoaded', function() {
+      const btns = document.querySelectorAll('.kc-btn');
+      const sections = document.querySelectorAll('.kc-section');
+      btns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          btns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const kc = btn.getAttribute('data-kc');
+          sections.forEach(sec => {
+            if (sec.classList.contains(kc)) {
+              sec.classList.add('active');
+            } else {
+              sec.classList.remove('active');
+            }
+          });
+        });
+      });
+    });
+  </script>
 </body>
 </html> 

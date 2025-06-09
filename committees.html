@@ -7,6 +7,90 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" href="assets/img/favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .org-chart {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 2.5rem 0 2rem 0;
+      font-size: 1rem;
+    }
+    .org-row {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 0.5rem 0;
+      position: relative;
+    }
+    .org-node {
+      background: #f4f8fb;
+      border-radius: 8px;
+      padding: 1rem 1.2rem;
+      margin: 0 1.2rem;
+      min-width: 180px;
+      box-shadow: 0 2px 8px rgba(44,62,80,0.06);
+      border-left: 6px solid #2c3e50;
+      text-align: center;
+      position: relative;
+      font-weight: 500;
+    }
+    .org-node.asc { border-left-color: #2c3e50; background: #e9ecef; }
+    .org-node.data { border-left-color: #888; background: #f7f7f7; }
+    .org-node.rat { border-left-color: #888; background: #f7f7f7; min-width: 160px; font-size: 0.97rem; }
+    .org-node.kc1 { border-left-color: #1a73e8; background: #eaf3fc; }
+    .org-node.kc2 { border-left-color: #e67e22; background: #fdf3e7; }
+    .org-node.kc3 { border-left-color: #27ae60; background: #eafaf1; }
+    .org-node.kc4 { border-left-color: #8e44ad; background: #f3eafc; }
+    .org-node.exec { border-left-color: #1a73e8; background: #e9f0fc; }
+    .org-node.qarc { border-left-color: #e67e22; background: #fdf3e7; }
+    /* Connecting lines */
+    .org-row.connect:before {
+      content: '';
+      position: absolute;
+      top: -18px;
+      left: 0;
+      right: 0;
+      height: 18px;
+      border-top: 2px solid #bbb;
+      z-index: 0;
+    }
+    .org-row.connect > .org-node:before {
+      content: '';
+      position: absolute;
+      top: -18px;
+      left: 50%;
+      width: 0;
+      height: 18px;
+      border-left: 2px solid #bbb;
+      z-index: 1;
+      transform: translateX(-50%);
+    }
+    .org-row.connect > .org-node:only-child:before {
+      display: none;
+    }
+    .org-row.connect > .org-node:first-child:before,
+    .org-row.connect > .org-node:last-child:before {
+      border-left: 2px solid #bbb;
+    }
+    /* Custom spacing for clarity */
+    .org-row.main { margin-bottom: 2.2rem; }
+    .org-row.kcwgs { margin-top: 1.2rem; margin-bottom: 2.2rem; }
+    .org-row.rats { margin-top: -0.5rem; margin-bottom: 2.2rem; }
+    .org-row.execqarc { margin-top: 2.2rem; }
+    @media (max-width: 900px) {
+      .org-row { flex-direction: column; align-items: center; }
+      .org-node { margin: 0.7rem 0; min-width: 160px; }
+      .org-row.connect:before { display: none; }
+      .org-row.connect > .org-node:before { display: none; }
+    }
+    .committee-details { max-width: 900px; margin: 2.5rem auto 1.5rem auto; }
+    .committee-details h3 { margin-top: 2rem; color: #1a73e8; }
+    .committee-details ul { margin: 0.5rem 0 1rem 1.5rem; }
+    .committee-details .kc1 { color: #1a73e8; }
+    .committee-details .kc2 { color: #e67e22; }
+    .committee-details .kc3 { color: #27ae60; }
+    .committee-details .kc4 { color: #8e44ad; }
+  </style>
 </head>
 <body>
   <header>
@@ -29,16 +113,91 @@
   <main>
     <section class="content">
       <h1>Accreditation Committees & Teams</h1>
-      <p>The following committees and teams are involved in the Cognia accreditation process:</p>
-      <ul>
-        <li>Accreditation Steering Committee (ASC)</li>
-        <li>Data Lead Team</li>
-        <li>RATS (Review and Technical Support)</li>
-        <li>KCWGs (Key Committee Working Groups)</li>
-        <li>Executive Summary Team</li>
-        <li>Quality Assurance Review Committee (QARC)</li>
-      </ul>
-      <p>Each committee plays a vital role in ensuring a successful accreditation process.</p>
+      <p>This org chart shows the hierarchy and relationships of all committees and teams involved in the Cognia accreditation process. Key Characteristic Working Groups (KCWGs) are color-coded to match the Standards page.</p>
+      <div class="org-chart">
+        <!-- ASC at the top -->
+        <div class="org-row main">
+          <div class="org-node asc">Accreditation Steering Committee (ASC)</div>
+        </div>
+        <!-- Data Lead and Executive Summary Team as direct reports -->
+        <div class="org-row connect main">
+          <div class="org-node data">Data Management & Analysis Lead</div>
+          <div class="org-node exec">Executive Summary Team</div>
+        </div>
+        <!-- RATs as children of Data Lead -->
+        <div class="org-row connect rats">
+          <div class="org-node rat">Student Performance RAT</div>
+          <div class="org-node rat">Stakeholder Feedback RAT</div>
+          <div class="org-node rat">Learning Environment RAT</div>
+        </div>
+        <!-- Four color-coded KCWGs as a separate row -->
+        <div class="org-row connect kcwgs">
+          <div class="org-node kc1">Culture of Learning KCWG</div>
+          <div class="org-node kc2">Leadership for Learning KCWG</div>
+          <div class="org-node kc3">Engagement of Learning KCWG</div>
+          <div class="org-node kc4">Growth in Learning KCWG</div>
+        </div>
+        <!-- QARC at the bottom -->
+        <div class="org-row execqarc">
+          <div class="org-node qarc">QARC</div>
+        </div>
+      </div>
+      <div class="committee-details">
+        <h3>Accreditation Steering Committee (ASC)</h3>
+        <ul>
+          <li><b>Mandate:</b> Overall leadership, coordination, and oversight for the self-assessment process.</li>
+          <li><b>Chair:</b> Principal/Head of School</li>
+          <li><b>Members:</b> Deputy Head, Department Head Rep, Business Manager, KCWG Chairs, Data Lead</li>
+        </ul>
+        <h3>Data Management & Analysis Lead</h3>
+        <ul>
+          <li><b>Mandate:</b> Oversees data collection plan, directory structure, and quality. Guides RATs, supports KCWGs.</li>
+          <li><b>Lead:</b> Data Specialist/Assessment Coordinator</li>
+        </ul>
+        <h3>Required Analysis Teams (RATs)</h3>
+        <ul>
+          <li><b>Mandate:</b> Analyze student performance, stakeholder feedback, and learning environment data. Report findings to KCWGs and ASC.</li>
+          <li><b>Student Performance RAT:</b> Chair: Assessment Coordinator/Math Dept. Head</li>
+          <li><b>Stakeholder Feedback RAT:</b> Chair: Counselor/Communications Lead</li>
+          <li><b>Learning Environment RAT:</b> Chair: Instructional Coach/Assistant Principal</li>
+        </ul>
+        <h3 class="kc1">Culture of Learning KCWG</h3>
+        <ul>
+          <li><b>Mandate:</b> Gather evidence, rate standards, draft narrative for Culture of Learning (Standards 1-6).</li>
+          <li><b>Chair:</b> Counselor/Dean of Students</li>
+          <li><b>Members:</b> Teachers, Support Staff, Parent Rep</li>
+        </ul>
+        <h3 class="kc2">Leadership for Learning KCWG</h3>
+        <ul>
+          <li><b>Mandate:</b> Gather evidence, rate standards, draft narrative for Leadership for Learning (Standards 7-15).</li>
+          <li><b>Chair:</b> Department Head/Assistant Principal</li>
+          <li><b>Members:</b> Teachers, Board Member, Admin Staff</li>
+        </ul>
+        <h3 class="kc3">Engagement of Learning KCWG</h3>
+        <ul>
+          <li><b>Mandate:</b> Gather evidence, rate standards, draft narrative for Engagement of Learning (Standards 16-23).</li>
+          <li><b>Chair:</b> Curriculum Coordinator/Tech Integration Specialist</li>
+          <li><b>Members:</b> Teachers, Librarian, Student Rep</li>
+        </ul>
+        <h3 class="kc4">Growth in Learning KCWG</h3>
+        <ul>
+          <li><b>Mandate:</b> Gather evidence, rate standards, draft narrative for Growth in Learning (Standards 24-31).</li>
+          <li><b>Chair:</b> Assessment Coordinator/Instructional Coach</li>
+          <li><b>Members:</b> Teachers, Special Ed Lead, PD Coordinator</li>
+        </ul>
+        <h3>Executive Summary Team</h3>
+        <ul>
+          <li><b>Mandate:</b> Drafts the Executive Summary based on input from all teams.</li>
+          <li><b>Lead:</b> Accreditation Coordinator</li>
+          <li><b>Members:</b> Principal/Head of School, Communications Lead/Writer</li>
+        </ul>
+        <h3>Quality Assurance & Review Committee (QARC)</h3>
+        <ul>
+          <li><b>Mandate:</b> Independent review of the draft self-assessment report. Provide feedback to ASC and teams.</li>
+          <li><b>Chair:</b> Senior Staff Member (not on ASC or KCWG Chair)</li>
+          <li><b>Members:</b> Teachers (other depts/grades), Admin/Support Staff, External Peer Reviewer (optional)</li>
+        </ul>
+      </div>
     </section>
   </main>
   <footer>
