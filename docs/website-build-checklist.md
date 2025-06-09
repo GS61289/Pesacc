@@ -8,13 +8,14 @@ This checklist outlines the key steps for building the Cognia accreditation webs
 
 ## Build Steps
 
-- [ ] **1. Initialize the Project Repository**
+- [x] **1. Initialize the Project Repository**
     1. Go to [GitHub](https://github.com/) and create a new repository (public or private as needed).
     2. Clone the repository to your local machine using `git clone <repo-url>`.
     3. (Optional) Set up a `.gitignore` file for Jekyll or your chosen SSG.
     4. Make an initial commit (e.g., a README file) and push to GitHub.
 
-- [ ] **2. Set Up the Static Site Generator**
+- [x] **2. Set Up the Static Site Generator**
+    - Jekyll starter files are present in the codebase (added via ZIP/manual copy).
     **Option A: Local Setup (Recommended if you have Jekyll installed locally)**
     1. Install [Jekyll](https://jekyllrb.com/docs/installation/) (recommended) or another SSG (Hugo, Eleventy) on your local machine.
     2. Run `jekyll new .` in your project directory to scaffold a new Jekyll site (or follow the equivalent for your SSG).
