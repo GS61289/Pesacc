@@ -90,6 +90,32 @@
     .committee-details .kc2 { color: #e67e22; }
     .committee-details .kc3 { color: #27ae60; }
     .committee-details .kc4 { color: #8e44ad; }
+    .org-node.clickable {
+      cursor: pointer;
+      transition: box-shadow 0.2s, border-color 0.2s;
+      box-shadow: 0 2px 8px rgba(44,62,80,0.10);
+    }
+    .org-node.clickable:hover, .org-node.clickable:focus {
+      border-left-width: 8px;
+      box-shadow: 0 4px 16px rgba(44,62,80,0.13);
+      border-left-color: #1a73e8 !important;
+    }
+    .committee-details .highlight-detail {
+      background: #fffbe6;
+      transition: background 0.7s;
+    }
+    .committee-box { background: #fff; border-radius: 8px; margin: 2.2em 0; padding: 1.2em 1.5em; box-shadow: 0 2px 8px rgba(44,62,80,0.06); border-left: 6px solid #e0e7ef; }
+    .committee-box.asc-desc { border-left-color: #2c3e50; }
+    .committee-box.data-desc { border-left-color: #888; }
+    .committee-box.rat-student-desc { border-left-color: #888; }
+    .committee-box.rat-stakeholder-desc { border-left-color: #888; }
+    .committee-box.rat-learning-desc { border-left-color: #888; }
+    .committee-box.kc1-desc { border-left-color: #1a73e8; }
+    .committee-box.kc2-desc { border-left-color: #e67e22; }
+    .committee-box.kc3-desc { border-left-color: #27ae60; }
+    .committee-box.kc4-desc { border-left-color: #8e44ad; }
+    .committee-box.exec-desc { border-left-color: #1a73e8; }
+    .committee-box.qarc-desc { border-left-color: #e67e22; }
   </style>
 </head>
 <body>
@@ -118,87 +144,137 @@
       <div class="org-chart">
         <!-- ASC at the top -->
         <div class="org-row main">
-          <div class="org-node asc">Accreditation Steering Committee (ASC)</div>
+          <div class="org-node asc clickable" data-target="asc-desc">Accreditation Steering Committee (ASC)</div>
         </div>
         <!-- Data Lead and Executive Summary Team as direct reports -->
         <div class="org-row connect main">
-          <div class="org-node data">Data Management & Analysis Lead</div>
-          <div class="org-node exec">Executive Summary Team</div>
+          <div class="org-node data clickable" data-target="data-desc">Data Management & Analysis Lead</div>
+          <div class="org-node exec clickable" data-target="exec-desc">Executive Summary Team</div>
         </div>
         <!-- RATs as children of Data Lead -->
         <div class="org-row connect rats">
-          <div class="org-node rat">Student Performance RAT</div>
-          <div class="org-node rat">Stakeholder Feedback RAT</div>
-          <div class="org-node rat">Learning Environment RAT</div>
+          <div class="org-node rat clickable" data-target="rat-student-desc">Student Performance RAT</div>
+          <div class="org-node rat clickable" data-target="rat-stakeholder-desc">Stakeholder Feedback RAT</div>
+          <div class="org-node rat clickable" data-target="rat-learning-desc">Learning Environment RAT</div>
         </div>
         <!-- Four color-coded KCWGs as a separate row -->
         <div class="org-row connect kcwgs">
-          <div class="org-node kc1">Culture of Learning KCWG</div>
-          <div class="org-node kc2">Leadership for Learning KCWG</div>
-          <div class="org-node kc3">Engagement of Learning KCWG</div>
-          <div class="org-node kc4">Growth in Learning KCWG</div>
+          <div class="org-node kc1 clickable" data-target="kc1-desc">Culture of Learning KCWG</div>
+          <div class="org-node kc2 clickable" data-target="kc2-desc">Leadership for Learning KCWG</div>
+          <div class="org-node kc3 clickable" data-target="kc3-desc">Engagement of Learning KCWG</div>
+          <div class="org-node kc4 clickable" data-target="kc4-desc">Growth in Learning KCWG</div>
         </div>
         <!-- QARC at the bottom -->
         <div class="org-row execqarc">
-          <div class="org-node qarc">QARC</div>
+          <div class="org-node qarc clickable" data-target="qarc-desc">QARC</div>
         </div>
       </div>
       <div class="committee-details">
-        <h3>Accreditation Steering Committee (ASC)</h3>
-        <ul>
-          <li><b>Mandate:</b> Overall leadership, coordination, and oversight for the self-assessment process.</li>
-          <li><b>Chair:</b> Principal/Head of School</li>
-          <li><b>Members:</b> Deputy Head, Department Head Rep, Business Manager, KCWG Chairs, Data Lead</li>
-        </ul>
-        <h3>Data Management & Analysis Lead</h3>
-        <ul>
-          <li><b>Mandate:</b> Oversees data collection plan, directory structure, and quality. Guides RATs, supports KCWGs.</li>
-          <li><b>Lead:</b> Data Specialist/Assessment Coordinator</li>
-        </ul>
-        <h3>Required Analysis Teams (RATs)</h3>
-        <ul>
-          <li><b>Mandate:</b> Analyze student performance, stakeholder feedback, and learning environment data. Report findings to KCWGs and ASC.</li>
-          <li><b>Student Performance RAT:</b> Chair: Assessment Coordinator/Math Dept. Head</li>
-          <li><b>Stakeholder Feedback RAT:</b> Chair: Counselor/Communications Lead</li>
-          <li><b>Learning Environment RAT:</b> Chair: Instructional Coach/Assistant Principal</li>
-        </ul>
-        <h3 class="kc1">Culture of Learning KCWG</h3>
-        <ul>
-          <li><b>Mandate:</b> Gather evidence, rate standards, draft narrative for Culture of Learning (Standards 1-6).</li>
-          <li><b>Chair:</b> Counselor/Dean of Students</li>
-          <li><b>Members:</b> Teachers, Support Staff, Parent Rep</li>
-        </ul>
-        <h3 class="kc2">Leadership for Learning KCWG</h3>
-        <ul>
-          <li><b>Mandate:</b> Gather evidence, rate standards, draft narrative for Leadership for Learning (Standards 7-15).</li>
-          <li><b>Chair:</b> Department Head/Assistant Principal</li>
-          <li><b>Members:</b> Teachers, Board Member, Admin Staff</li>
-        </ul>
-        <h3 class="kc3">Engagement of Learning KCWG</h3>
-        <ul>
-          <li><b>Mandate:</b> Gather evidence, rate standards, draft narrative for Engagement of Learning (Standards 16-23).</li>
-          <li><b>Chair:</b> Curriculum Coordinator/Tech Integration Specialist</li>
-          <li><b>Members:</b> Teachers, Librarian, Student Rep</li>
-        </ul>
-        <h3 class="kc4">Growth in Learning KCWG</h3>
-        <ul>
-          <li><b>Mandate:</b> Gather evidence, rate standards, draft narrative for Growth in Learning (Standards 24-31).</li>
-          <li><b>Chair:</b> Assessment Coordinator/Instructional Coach</li>
-          <li><b>Members:</b> Teachers, Special Ed Lead, PD Coordinator</li>
-        </ul>
-        <h3>Executive Summary Team</h3>
-        <ul>
-          <li><b>Mandate:</b> Drafts the Executive Summary based on input from all teams.</li>
-          <li><b>Lead:</b> Accreditation Coordinator</li>
-          <li><b>Members:</b> Principal/Head of School, Communications Lead/Writer</li>
-        </ul>
-        <h3>Quality Assurance & Review Committee (QARC)</h3>
-        <ul>
-          <li><b>Mandate:</b> Independent review of the draft self-assessment report. Provide feedback to ASC and teams.</li>
-          <li><b>Chair:</b> Senior Staff Member (not on ASC or KCWG Chair)</li>
-          <li><b>Members:</b> Teachers (other depts/grades), Admin/Support Staff, External Peer Reviewer (optional)</li>
-        </ul>
+        <div class="committee-box asc-desc">
+          <h3 id="asc-desc">Accreditation Steering Committee (ASC)</h3>
+          <ul>
+            <li><b>Mandate:</b> Overall leadership, coordination, and oversight for the self-assessment process.</li>
+            <li><b>Chair:</b> Principal/Head of School</li>
+            <li><b>Members:</b> Deputy Head, Department Head Rep, Business Manager, KCWG Chairs, Data Lead</li>
+          </ul>
+        </div>
+        <div class="committee-box data-desc">
+          <h3 id="data-desc">Data Management & Analysis Lead</h3>
+          <ul>
+            <li><b>Mandate:</b> Oversees data collection plan, directory structure, and quality. Guides RATs, supports KCWGs.</li>
+            <li><b>Lead:</b> Data Specialist/Assessment Coordinator</li>
+          </ul>
+        </div>
+        <div class="committee-box rat-student-desc">
+          <h3 id="rat-student-desc">Student Performance RAT</h3>
+          <ul>
+            <li><b>Mandate:</b> Analyze student performance data. Report findings to KCWGs and ASC.</li>
+            <li><b>Chair:</b> Assessment Coordinator/Math Dept. Head</li>
+          </ul>
+        </div>
+        <div class="committee-box rat-stakeholder-desc">
+          <h3 id="rat-stakeholder-desc">Stakeholder Feedback RAT</h3>
+          <ul>
+            <li><b>Mandate:</b> Analyze stakeholder feedback data. Report findings to KCWGs and ASC.</li>
+            <li><b>Chair:</b> Counselor/Communications Lead</li>
+          </ul>
+        </div>
+        <div class="committee-box rat-learning-desc">
+          <h3 id="rat-learning-desc">Learning Environment RAT</h3>
+          <ul>
+            <li><b>Mandate:</b> Analyze learning environment data. Report findings to KCWGs and ASC.</li>
+            <li><b>Chair:</b> Instructional Coach/Assistant Principal</li>
+          </ul>
+        </div>
+        <div class="committee-box kc1-desc">
+          <h3 id="kc1-desc" class="kc1">Culture of Learning KCWG</h3>
+          <ul>
+            <li><b>Mandate:</b> Gather evidence, rate standards, draft narrative for Culture of Learning (Standards 1-6).</li>
+            <li><b>Chair:</b> Counselor/Dean of Students</li>
+            <li><b>Members:</b> Teachers, Support Staff, Parent Rep</li>
+          </ul>
+        </div>
+        <div class="committee-box kc2-desc">
+          <h3 id="kc2-desc" class="kc2">Leadership for Learning KCWG</h3>
+          <ul>
+            <li><b>Mandate:</b> Gather evidence, rate standards, draft narrative for Leadership for Learning (Standards 7-15).</li>
+            <li><b>Chair:</b> Department Head/Assistant Principal</li>
+            <li><b>Members:</b> Teachers, Board Member, Admin Staff</li>
+          </ul>
+        </div>
+        <div class="committee-box kc3-desc">
+          <h3 id="kc3-desc" class="kc3">Engagement of Learning KCWG</h3>
+          <ul>
+            <li><b>Mandate:</b> Gather evidence, rate standards, draft narrative for Engagement of Learning (Standards 16-23).</li>
+            <li><b>Chair:</b> Curriculum Coordinator/Tech Integration Specialist</li>
+            <li><b>Members:</b> Teachers, Librarian, Student Rep</li>
+          </ul>
+        </div>
+        <div class="committee-box kc4-desc">
+          <h3 id="kc4-desc" class="kc4">Growth in Learning KCWG</h3>
+          <ul>
+            <li><b>Mandate:</b> Gather evidence, rate standards, draft narrative for Growth in Learning (Standards 24-31).</li>
+            <li><b>Chair:</b> Assessment Coordinator/Instructional Coach</li>
+            <li><b>Members:</b> Teachers, Special Ed Lead, PD Coordinator</li>
+          </ul>
+        </div>
+        <div class="committee-box exec-desc">
+          <h3 id="exec-desc">Executive Summary Team</h3>
+          <ul>
+            <li><b>Mandate:</b> Drafts the Executive Summary based on input from all teams.</li>
+            <li><b>Lead:</b> Accreditation Coordinator</li>
+            <li><b>Members:</b> Principal/Head of School, Communications Lead/Writer</li>
+          </ul>
+        </div>
+        <div class="committee-box qarc-desc">
+          <h3 id="qarc-desc">Quality Assurance & Review Committee (QARC)</h3>
+          <ul>
+            <li><b>Mandate:</b> Independent review of the draft self-assessment report. Provide feedback to ASC and teams.</li>
+            <li><b>Chair:</b> Senior Staff Member (not on ASC or KCWG Chair)</li>
+            <li><b>Members:</b> Teachers (other depts/grades), Admin/Support Staff, External Peer Reviewer (optional)</li>
+          </ul>
+        </div>
       </div>
+      <script>
+        // Smooth scroll and highlight for committee details
+        document.querySelectorAll('.org-node.clickable').forEach(function(node) {
+          node.setAttribute('tabindex', '0');
+          node.setAttribute('role', 'button');
+          node.setAttribute('aria-label', node.textContent + ' details');
+          node.addEventListener('click', function() {
+            var targetId = node.getAttribute('data-target');
+            var target = document.getElementById(targetId);
+            if (target) {
+              target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              target.classList.add('highlight-detail');
+              setTimeout(function() { target.classList.remove('highlight-detail'); }, 1800);
+            }
+          });
+          node.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') node.click();
+          });
+        });
+      </script>
     </section>
   </main>
   <footer>
