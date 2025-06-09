@@ -15,10 +15,31 @@ This checklist outlines the key steps for building the Cognia accreditation webs
     4. Make an initial commit (e.g., a README file) and push to GitHub.
 
 - [ ] **2. Set Up the Static Site Generator**
+    **Option A: Local Setup (Recommended if you have Jekyll installed locally)**
     1. Install [Jekyll](https://jekyllrb.com/docs/installation/) (recommended) or another SSG (Hugo, Eleventy) on your local machine.
     2. Run `jekyll new .` in your project directory to scaffold a new Jekyll site (or follow the equivalent for your SSG).
     3. Test the local build with `bundle exec jekyll serve` (or the SSG's local server command).
     4. Commit and push the generated files to GitHub.
+
+    **Option B: Set Up Jekyll Directly on GitHub (No Local Installation Needed)**
+    1. Go to the [Jekyll Minima template repository](https://github.com/jekyll/minima) (or [Jekyll basic starter](https://github.com/jekyll/jekyll)).
+    2. Click the "Use this template" button to create a new repository in your GitHub account.
+    3. Name your new repository and create it.
+    4. (Optional) Clone the new repository to your local machine or open it in Cursor for further editing.
+    5. Edit files directly on GitHub or in your editor as needed.
+    6. Enable GitHub Pages in your repository settings (Settings > Pages) and select the branch (usually `main` or `gh-pages`).
+    7. Your site will be live at the provided GitHub Pages URL.
+
+    **Option C: Manual File Creation on GitHub**
+    1. Create a new repository on GitHub.
+    2. Manually add the following files/folders via the GitHub web interface:
+        - `_config.yml` (basic config file)
+        - `index.md` or `index.html` (homepage)
+        - `_layouts/` (with at least a `default.html`)
+        - `_includes/` (optional, for reusable components)
+        - Any other folders you need (`assets/`, `pages/`, etc.)
+    3. Enable GitHub Pages as above.
+    4. Edit and build your site directly on GitHub or in your editor.
 
 - [ ] **3. Create the Folder Structure**
     1. Create folders as per the technical approach:
