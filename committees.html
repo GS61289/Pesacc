@@ -43,6 +43,7 @@
     .org-node.kc4 { border-left-color: #8e44ad; background: #f3eafc; }
     .org-node.exec { border-left-color: #1a73e8; background: #e9f0fc; }
     .org-node.qarc { border-left-color: #e67e22; background: #fdf3e7; }
+    .org-node.ac { border-left-color: #1a73e8; background: #f2f6fa; }
     /* Connecting lines */
     .org-row.connect:before {
       content: '';
@@ -116,6 +117,37 @@
     .committee-box.kc4-desc { border-left-color: #8e44ad; }
     .committee-box.exec-desc { border-left-color: #1a73e8; }
     .committee-box.qarc-desc { border-left-color: #e67e22; }
+    .section-separator {
+      border: none;
+      border-top: 3.5px solid #1a73e8;
+      margin: 3.5em 0 3.5em 0;
+      width: 100%;
+    }
+    .committee-dashboard { max-width: 950px; margin: 0 auto 2.5em auto; }
+    .committee-card { background: #fff; border-radius: 10px; box-shadow: 0 2px 10px rgba(44,62,80,0.07); margin-bottom: 2.2em; border-left: 7px solid #2c3e50; }
+    .committee-card.asc-card { border-left-color: #2c3e50; }
+    .committee-card.data-card { border-left-color: #888; }
+    .committee-card.rat-student-card, .committee-card.rat-stakeholder-card, .committee-card.rat-learning-card { border-left-color: #888; }
+    .committee-card.exec-card { border-left-color: #1a73e8; }
+    .committee-card.qarc-card { border-left-color: #e67e22; }
+    .committee-card.ac-card { border-left-color: #1a73e8; }
+    .card-header { width: 100%; background: #e9ecef; border: none; border-radius: 10px 10px 0 0; padding: 1.1em 1.5em; font-size: 1.15em; font-weight: bold; color: #2c3e50; display: flex; align-items: center; justify-content: space-between; cursor: pointer; transition: background 0.18s; }
+    .card-header:focus { outline: 2px solid #1a73e8; }
+    .expand-icon { font-size: 1.1em; transition: transform 0.2s; }
+    .card-header[aria-expanded="true"] .expand-icon { transform: rotate(180deg); }
+    .card-details { padding: 1.2em 1.5em 1.5em 1.5em; border-top: 1.5px solid #e0e7ef; }
+    .member-tree { margin-bottom: 1.2em; }
+    .member-role { margin-bottom: 0.4em; font-size: 1.04em; }
+    .member-role.chair { font-weight: bold; color: #2c3e50; }
+    .task-table { width: 100%; border-collapse: collapse; margin-top: 0.7em; font-size: 1em; }
+    .task-table th, .task-table td { border: 1px solid #e0e7ef; padding: 0.6em 0.7em; text-align: left; }
+    .task-table th { background: #f7fafd; color: #2c3e50; font-weight: 600; }
+    .task-table tr:nth-child(even) { background: #f9fbfd; }
+    .committee-card.kc1-card { border-left-color: #1a73e8; }
+    .committee-card.kc2-card { border-left-color: #e67e22; }
+    .committee-card.kc3-card { border-left-color: #27ae60; }
+    .committee-card.kc4-card { border-left-color: #9b59b6; }
+    .committee-card.exec-card { border-left-color: #1a73e8; }
   </style>
 </head>
 <body>
@@ -146,8 +178,9 @@
         <div class="org-row main">
           <div class="org-node asc clickable" data-target="asc-desc">Accreditation Steering Committee (ASC)</div>
         </div>
-        <!-- Data Lead and Executive Summary Team as direct reports -->
+        <!-- AC and Data Lead and Executive Summary Team as direct reports -->
         <div class="org-row connect main">
+          <div class="org-node ac clickable" data-target="ac-desc">Accreditation Coordinator (AC)</div>
           <div class="org-node data clickable" data-target="data-desc">Data Management & Analysis Lead</div>
           <div class="org-node exec clickable" data-target="exec-desc">Executive Summary Team</div>
         </div>
@@ -169,109 +202,1110 @@
           <div class="org-node qarc clickable" data-target="qarc-desc">QARC</div>
         </div>
       </div>
+      <hr class="section-separator">
+      <section class="committee-dashboard">
+        <div class="committee-card asc-card">
+          <button class="card-header" aria-expanded="false" aria-controls="asc-details">
+            <span class="committee-title"><i class="fa fa-sitemap"></i> Accreditation Steering Committee (ASC)</span>
+            <span class="expand-icon"><i class="fa fa-chevron-down"></i></span>
+          </button>
+          <div class="card-details" id="asc-details" hidden>
+            <div class="member-tree">
+              <div class="member-role chair"><b>Chair:</b> Principal/Head of School</div>
+              <div class="member-role"><b>Members:</b> Deputy Head, Department Head Rep, Business Manager, KCWG Chairs, Data Lead</div>
+            </div>
+            <table class="task-table">
+              <thead>
+                <tr><th>Task / Phase</th><th>Description</th><th>Assigned Member(s)</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="3" style="background:#e9f2fb;font-weight:bold;">Ongoing / Structural Responsibilities</td>
+                </tr>
+                <tr>
+                  <td>Leadership & Oversight</td>
+                  <td>Provide overall leadership, coordination, and oversight for the self-assessment process. Ensure alignment with school mission and strategic goals.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Resource Allocation</td>
+                  <td>Monitor progress against the timeline and allocate necessary resources.</td>
+                  <td>Chair, Business Manager</td>
+                </tr>
+                <tr>
+                  <td>Document Management</td>
+                  <td>Ensure essential institutional documents are collected and organized in Supporting Documents directory. Oversee regular backups and naming conventions.</td>
+                  <td>Chair, Accreditation Coordinator</td>
+                </tr>
+                <tr>
+                  <td>Process Facilitation</td>
+                  <td>Facilitate overall process and communication among all teams.</td>
+                  <td>Chair, Accreditation Coordinator</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#e9f2fb;font-weight:bold;">Phase 1: Setup & Initial Data Gathering (May–Aug 2025)</td>
+                </tr>
+                <tr>
+                  <td>Team Appointments</td>
+                  <td>Finalize team member appointments & confirm roles.</td>
+                  <td>Chair / Principal</td>
+                </tr>
+                <tr>
+                  <td>Kickoff Meeting</td>
+                  <td>Schedule & conduct orientation for all teams (review standards, process, timeline, tools, directory structure).</td>
+                  <td>Accreditation Coordinator</td>
+                </tr>
+                <tr>
+                  <td>Milestone Check</td>
+                  <td>Ensure all teams are established, oriented, and initial data gathering is underway.</td>
+                  <td>Chair, Accreditation Coordinator</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#e9f2fb;font-weight:bold;">Phase 2: Data Analysis & Evidence Collection (Sep–Dec 2025)</td>
+                </tr>
+                <tr>
+                  <td>Progress Check-In</td>
+                  <td>Hold mid-phase progress check-in meeting with all team chairs/leads.</td>
+                  <td>Accreditation Coordinator</td>
+                </tr>
+                <tr>
+                  <td>Review Preliminary Findings</td>
+                  <td>Review preliminary findings reports from Required Analysis Teams (RATs).</td>
+                  <td>ASC Members</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#e9f2fb;font-weight:bold;">Phase 3: Narrative Drafting & Initial Review (Jan–Mar 2026)</td>
+                </tr>
+                <tr>
+                  <td>Receive Drafts</td>
+                  <td>Receive and compile completed draft reports/narratives from all teams.</td>
+                  <td>ASC, Accreditation Coordinator</td>
+                </tr>
+                <tr>
+                  <td>Compile First Draft</td>
+                  <td>Compile the first full draft of the Self-Assessment Report.</td>
+                  <td>Accreditation Coordinator</td>
+                </tr>
+                <tr>
+                  <td>Submit to QARC</td>
+                  <td>Submit the complete first draft to the Quality Assurance & Review Committee (QARC).</td>
+                  <td>Accreditation Coordinator</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#e9f2fb;font-weight:bold;">Phase 4: Revision & Finalization (Apr–May 2026)</td>
+                </tr>
+                <tr>
+                  <td>Review QARC Feedback</td>
+                  <td>Review QARC feedback and distribute relevant sections to appropriate teams.</td>
+                  <td>Accreditation Coordinator</td>
+                </tr>
+                <tr>
+                  <td>Oversee Revisions</td>
+                  <td>Oversee revision of report sections based on QARC feedback.</td>
+                  <td>ASC, All Team Chairs/Leads</td>
+                </tr>
+                <tr>
+                  <td>Compile Final Report</td>
+                  <td>Compile the final version of the Self-Assessment Report.</td>
+                  <td>Accreditation Coordinator</td>
+                </tr>
+                <tr>
+                  <td>Final Approval</td>
+                  <td>Final review and approval of the report by the ASC and Principal/Head of School.</td>
+                  <td>ASC / Principal</td>
+                </tr>
+                <tr>
+                  <td>Submission</td>
+                  <td>Submit the final Self-Assessment Report and supporting evidence via the Cognia online platform.</td>
+                  <td>Accreditation Coordinator</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="committee-card data-card">
+          <button class="card-header" aria-expanded="false" aria-controls="data-details">
+            <span class="committee-title"><i class="fa fa-database"></i> Data Management & Analysis Lead</span>
+            <span class="expand-icon"><i class="fa fa-chevron-down"></i></span>
+          </button>
+          <div class="card-details" id="data-details" hidden>
+            <div class="member-tree">
+              <div class="member-role chair"><b>Lead:</b> Data Specialist/Assessment Coordinator</div>
+              <div class="member-role"><b>Members:</b> Data Team, RAT Chairs, Assessment/Data Support Staff</div>
+            </div>
+            <table class="task-table">
+              <thead>
+                <tr><th>Task / Phase</th><th>Description</th><th>Assigned Member(s)</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="3" style="background:#f2f6fa;font-weight:bold;">Ongoing / Structural Responsibilities</td>
+                </tr>
+                <tr>
+                  <td>Data Collection Plan</td>
+                  <td>Oversee the development and implementation of the data collection plan and directory structure for accreditation evidence.</td>
+                  <td>Lead, Data Team</td>
+                </tr>
+                <tr>
+                  <td>Coordinate RATs</td>
+                  <td>Coordinate the three Required Analysis Teams (Student Performance, Stakeholder Feedback, Learning Environment) and ensure timely completion of required analyses.</td>
+                  <td>Lead, RAT Chairs</td>
+                </tr>
+                <tr>
+                  <td>Data Quality & Cleaning</td>
+                  <td>Ensure data quality, cleaning, and validation for all required analyses. Guide teams on evaluating data relevance, validity, accuracy, and representation.</td>
+                  <td>Lead, Data Team</td>
+                </tr>
+                <tr>
+                  <td>Support KCWGs</td>
+                  <td>Provide data support and guidance to Key Characteristic Working Groups (KCWGs) as they gather evidence and draft narratives.</td>
+                  <td>Lead, Data Team</td>
+                </tr>
+                <tr>
+                  <td>Organization & Backups</td>
+                  <td>Ensure overall organization of evidence, consistent naming conventions, and regular backups of the accreditation evidence directory.</td>
+                  <td>Lead, Data Team</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#f2f6fa;font-weight:bold;">Phase 1: Setup & Initial Data Gathering (May–Aug 2025)</td>
+                </tr>
+                <tr>
+                  <td>Directory Setup</td>
+                  <td>Confirm data directory structure, access permissions, and any required tools for all teams.</td>
+                  <td>Lead, Data Team</td>
+                </tr>
+                <tr>
+                  <td>RATs Data Source Review</td>
+                  <td>Guide RATs in identifying and evaluating existing relevant data sources for Student Performance, Stakeholder Feedback, and Learning Environment.</td>
+                  <td>Lead, RAT Chairs</td>
+                </tr>
+                <tr>
+                  <td>Systematic Collection</td>
+                  <td>Oversee the start of systematic data collection by RATs.</td>
+                  <td>Lead, RAT Chairs</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#f2f6fa;font-weight:bold;">Phase 2: Data Analysis & Evidence Collection (Sep–Dec 2025)</td>
+                </tr>
+                <tr>
+                  <td>Data Cleaning Oversight</td>
+                  <td>Ensure RATs begin and complete data cleaning processes, including validation and disaggregation as required.</td>
+                  <td>Lead, RAT Chairs</td>
+                </tr>
+                <tr>
+                  <td>Analysis Guidance</td>
+                  <td>Guide RATs in performing initial data analysis and drafting preliminary findings reports.</td>
+                  <td>Lead, RAT Chairs</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#f2f6fa;font-weight:bold;">Phase 3: Narrative Drafting & Initial Review (Jan–Mar 2026)</td>
+                </tr>
+                <tr>
+                  <td>Final Analysis Reports</td>
+                  <td>Ensure RATs finalize data analysis reports and draft required narratives for their sections.</td>
+                  <td>Lead, RAT Chairs</td>
+                </tr>
+                <tr>
+                  <td>Support for Draft Submission</td>
+                  <td>Support all teams in submitting completed draft reports/narratives to the ASC.</td>
+                  <td>Lead, Data Team</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#f2f6fa;font-weight:bold;">Phase 4: Revision & Finalization (Apr–May 2026)</td>
+                </tr>
+                <tr>
+                  <td>Revision Support</td>
+                  <td>Support teams in revising their sections based on QARC feedback, ensuring data accuracy and completeness.</td>
+                  <td>Lead, Data Team, RAT Chairs</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="committee-card rat-student-card">
+          <button class="card-header" aria-expanded="false" aria-controls="rat-student-details">
+            <span class="committee-title"><i class="fa fa-chart-line"></i> Student Performance RAT</span>
+            <span class="expand-icon"><i class="fa fa-chevron-down"></i></span>
+          </button>
+          <div class="card-details" id="rat-student-details" hidden>
+            <div class="member-tree">
+              <div class="member-role chair"><b>Chair:</b> Assessment Coordinator/Math Dept. Head</div>
+              <div class="member-role"><b>Members:</b> Data Analyst/Teacher with Data Skills, Curriculum Coordinator, Special Education Lead, Grade Level/Dept. Rep</div>
+            </div>
+            <table class="task-table">
+              <thead>
+                <tr><th>Task / Phase</th><th>Description</th><th>Assigned Member(s)</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="3" style="background:#f8fafd;font-weight:bold;">Ongoing / Structural Responsibilities</td>
+                </tr>
+                <tr>
+                  <td>Student Performance Analysis</td>
+                  <td>Conduct required analysis of student performance data, focusing on longitudinal and disaggregated assessment results (standardized tests, internal assessments, etc.).</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Data Quality & Cleaning</td>
+                  <td>Ensure data relevance, validity, accuracy, and representation. Clean and validate data sources, disaggregate by subgroups, and use trend data where possible.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Reporting</td>
+                  <td>Prepare detailed analysis reports and findings for the Data Lead, KCWGs, and ASC. Use provided templates to document sources, trend data, and comments.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Support Evidence</td>
+                  <td>Link analysis and findings to relevant standards and provide specific, verifiable evidence to support ratings and narratives.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#f8fafd;font-weight:bold;">Phase 1: Setup & Initial Data Gathering (May–Aug 2025)</td>
+                </tr>
+                <tr>
+                  <td>Data Source Review</td>
+                  <td>Identify and evaluate existing relevant data sources for student performance. Begin systematic collection of required data.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#f8fafd;font-weight:bold;">Phase 2: Data Analysis & Evidence Collection (Sep–Dec 2025)</td>
+                </tr>
+                <tr>
+                  <td>Data Collection & Cleaning</td>
+                  <td>Continue data collection and begin data cleaning processes, ensuring data is ready for analysis.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Initial Analysis</td>
+                  <td>Perform initial data analysis and draft preliminary findings reports for review by Data Lead and ASC.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#f8fafd;font-weight:bold;">Phase 3: Narrative Drafting & Initial Review (Jan–Mar 2026)</td>
+                </tr>
+                <tr>
+                  <td>Final Analysis & Narrative</td>
+                  <td>Finalize data analysis reports and draft the narrative for the Student Performance section, following the required template and prompts.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Draft Submission</td>
+                  <td>Submit completed draft report/narrative to the ASC for compilation and review.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#f8fafd;font-weight:bold;">Phase 4: Revision & Finalization (Apr–May 2026)</td>
+                </tr>
+                <tr>
+                  <td>Revision</td>
+                  <td>Revise analysis and narrative based on QARC and ASC feedback, ensuring accuracy and completeness.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="committee-card rat-stakeholder-card">
+          <button class="card-header" aria-expanded="false" aria-controls="rat-stakeholder-details">
+            <span class="committee-title"><i class="fa fa-users"></i> Stakeholder Feedback RAT</span>
+            <span class="expand-icon"><i class="fa fa-chevron-down"></i></span>
+          </button>
+          <div class="card-details" id="rat-stakeholder-details" hidden>
+            <div class="member-tree">
+              <div class="member-role chair"><b>Chair:</b> Counselor/Communications Lead</div>
+              <div class="member-role"><b>Members:</b> Parent Liaison/Admin Support, Teacher Representative, Student Government Advisor</div>
+            </div>
+            <table class="task-table">
+              <thead>
+                <tr><th>Task / Phase</th><th>Description</th><th>Assigned Member(s)</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="3" style="background:#f8fafd;font-weight:bold;">Ongoing / Structural Responsibilities</td>
+                </tr>
+                <tr>
+                  <td>Stakeholder Feedback Analysis</td>
+                  <td>Conduct required analysis of stakeholder feedback data from learners, families, and staff using surveys, focus groups, and other instruments.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Data Quality & Cleaning</td>
+                  <td>Ensure data relevance, validity, accuracy, and representation. Clean and validate data sources, disaggregate by subgroups, and use trend data where possible.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Reporting</td>
+                  <td>Prepare detailed analysis reports and findings for the Data Lead, KCWGs, and ASC. Use provided templates to document sources, trend data, and comments.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Support Evidence</td>
+                  <td>Link analysis and findings to relevant standards and provide specific, verifiable evidence to support ratings and narratives.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#f8fafd;font-weight:bold;">Phase 1: Setup & Initial Data Gathering (May–Aug 2025)</td>
+                </tr>
+                <tr>
+                  <td>Survey Planning</td>
+                  <td>Plan survey administration (if new surveys are needed) and establish timelines for data collection from all stakeholder groups.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Survey Deployment</td>
+                  <td>Deploy surveys to learners, families, and staff as applicable. Ensure broad and representative participation.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Data Source Review</td>
+                  <td>Identify and evaluate existing relevant data sources for stakeholder feedback. Begin systematic collection of required data.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#f8fafd;font-weight:bold;">Phase 2: Data Analysis & Evidence Collection (Sep–Dec 2025)</td>
+                </tr>
+                <tr>
+                  <td>Data Collection & Cleaning</td>
+                  <td>Continue data collection and begin data cleaning processes, ensuring data is ready for analysis.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Initial Analysis</td>
+                  <td>Perform initial data analysis and draft preliminary findings reports for review by Data Lead and ASC.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#f8fafd;font-weight:bold;">Phase 3: Narrative Drafting & Initial Review (Jan–Mar 2026)</td>
+                </tr>
+                <tr>
+                  <td>Final Analysis & Narrative</td>
+                  <td>Finalize data analysis reports and draft the narrative for the Stakeholder Feedback section, following the required template and prompts.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Draft Submission</td>
+                  <td>Submit completed draft report/narrative to the ASC for compilation and review.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#f8fafd;font-weight:bold;">Phase 4: Revision & Finalization (Apr–May 2026)</td>
+                </tr>
+                <tr>
+                  <td>Revision</td>
+                  <td>Revise analysis and narrative based on QARC and ASC feedback, ensuring accuracy and completeness.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="committee-card rat-learning-card">
+          <button class="card-header" aria-expanded="false" aria-controls="rat-learning-details">
+            <span class="committee-title"><i class="fa fa-eye"></i> Learning Environment RAT</span>
+            <span class="expand-icon"><i class="fa fa-chevron-down"></i></span>
+          </button>
+          <div class="card-details" id="rat-learning-details" hidden>
+            <div class="member-tree">
+              <div class="member-role chair"><b>Chair:</b> Instructional Coach/Assistant Principal</div>
+              <div class="member-role"><b>Members:</b> Certified Observer 1, Certified Observer 2, Teacher Leader</div>
+            </div>
+            <table class="task-table">
+              <thead>
+                <tr><th>Task / Phase</th><th>Description</th><th>Assigned Member(s)</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="3" style="background:#f8fafd;font-weight:bold;">Ongoing / Structural Responsibilities</td>
+                </tr>
+                <tr>
+                  <td>Learning Environment Analysis</td>
+                  <td>Conduct required analysis of learning environment observation data, focusing on learner engagement using tools such as eleot. Analyze trends and provide actionable findings.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Observer Training & Calibration</td>
+                  <td>Ensure all observers are trained and calibrated in the use of the observation instrument(s) to ensure reliability and validity of data.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Data Quality & Cleaning</td>
+                  <td>Ensure data relevance, validity, accuracy, and representation. Clean and validate observation data, disaggregate by subgroups, and use trend data where possible.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Reporting</td>
+                  <td>Prepare detailed analysis reports and findings for the Data Lead, KCWGs, and ASC. Use provided templates to document sources, trend data, and comments.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Support Evidence</td>
+                  <td>Link analysis and findings to relevant standards and provide specific, verifiable evidence to support ratings and narratives.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#f8fafd;font-weight:bold;">Phase 1: Setup & Initial Data Gathering (May–Aug 2025)</td>
+                </tr>
+                <tr>
+                  <td>Observation Planning</td>
+                  <td>Plan observation schedule, confirm observer availability, and verify observer training/calibration status.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Data Source Review</td>
+                  <td>Identify and evaluate existing relevant data sources for learning environment observations. Begin systematic collection of required data.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#f8fafd;font-weight:bold;">Phase 2: Data Analysis & Evidence Collection (Sep–Dec 2025)</td>
+                </tr>
+                <tr>
+                  <td>Conduct Observations</td>
+                  <td>Carry out scheduled learning environment observations and collect observation data as planned.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Data Collection & Cleaning</td>
+                  <td>Continue data collection and begin data cleaning processes, ensuring data is ready for analysis.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Initial Analysis</td>
+                  <td>Perform initial data analysis and draft preliminary findings reports for review by Data Lead and ASC.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#f8fafd;font-weight:bold;">Phase 3: Narrative Drafting & Initial Review (Jan–Mar 2026)</td>
+                </tr>
+                <tr>
+                  <td>Final Analysis & Narrative</td>
+                  <td>Finalize data analysis reports and draft the narrative for the Learning Environment section, following the required template and prompts.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Draft Submission</td>
+                  <td>Submit completed draft report/narrative to the ASC for compilation and review.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#f8fafd;font-weight:bold;">Phase 4: Revision & Finalization (Apr–May 2026)</td>
+                </tr>
+                <tr>
+                  <td>Revision</td>
+                  <td>Revise analysis and narrative based on QARC and ASC feedback, ensuring accuracy and completeness.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="committee-card kc1-card">
+          <button class="card-header" aria-expanded="false" aria-controls="kc1-details">
+            <span class="committee-title"><i class="fa fa-leaf"></i> Culture of Learning KCWG</span>
+            <span class="expand-icon"><i class="fa fa-chevron-down"></i></span>
+          </button>
+          <div class="card-details" id="kc1-details" hidden>
+            <div class="member-tree">
+              <div class="member-role chair"><b>Chair:</b> Counselor/Dean of Students</div>
+              <div class="member-role"><b>Members:</b> Teacher 1, Teacher 2, Support Staff, Parent Representative</div>
+            </div>
+            <table class="task-table">
+              <thead>
+                <tr><th>Task / Phase</th><th>Description</th><th>Assigned Member(s)</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="3" style="background:#eaf3fc;font-weight:bold;">Ongoing / Structural Responsibilities</td>
+                </tr>
+                <tr>
+                  <td>Understand Standards</td>
+                  <td>Deeply understand the Performance Standards within the Culture of Learning Key Characteristic (Standards 1-6).</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Evidence Gathering</td>
+                  <td>Gather and organize specific evidence supporting each standard, with support from RATs and Data Lead.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Support Narrative</td>
+                  <td>Draft the overall narrative for the Key Characteristic, referencing evidence and incorporating findings from the RATs.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Rating Standards</td>
+                  <td>Rate the standards using the rubrics and document rationale in Notes.md.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Directory Organization</td>
+                  <td>Place evidence in the relevant Evidence_Docs folder and add explanatory notes in Notes.md.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#eaf3fc;font-weight:bold;">Phase 1: Setup & Initial Data Gathering (May–Aug 2025)</td>
+                </tr>
+                <tr>
+                  <td>Review Standards</td>
+                  <td>Review assigned standards in depth and begin identifying potential evidence within existing institutional documents.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#eaf3fc;font-weight:bold;">Phase 2: Data Analysis & Evidence Collection (Sep–Dec 2025)</td>
+                </tr>
+                <tr>
+                  <td>Evidence Collection</td>
+                  <td>Actively collect specific evidence documents for each standard, organizing them within the designated directory structure.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Preliminary Rating</td>
+                  <td>Begin preliminary rating of standards based on gathered evidence, documenting rationale in Notes.md.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#eaf3fc;font-weight:bold;">Phase 3: Narrative Drafting & Initial Review (Jan–Mar 2026)</td>
+                </tr>
+                <tr>
+                  <td>Finalize Evidence & Ratings</td>
+                  <td>Finalize evidence collection and complete the rating for each standard within the characteristic.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Draft Narrative</td>
+                  <td>Draft the comprehensive narrative for the Key Characteristic, integrating findings from RAT reports and citing specific evidence.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Draft Submission</td>
+                  <td>Submit completed draft narrative to the ASC for compilation and review.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#eaf3fc;font-weight:bold;">Phase 4: Revision & Finalization (Apr–May 2026)</td>
+                </tr>
+                <tr>
+                  <td>Revision</td>
+                  <td>Revise narrative and evidence based on QARC and ASC feedback, ensuring accuracy and completeness.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="committee-card kc2-card">
+          <button class="card-header" aria-expanded="false" aria-controls="kc2-details">
+            <span class="committee-title"><i class="fa fa-chess-king"></i> Leadership for Learning KCWG</span>
+            <span class="expand-icon"><i class="fa fa-chevron-down"></i></span>
+          </button>
+          <div class="card-details" id="kc2-details" hidden>
+            <div class="member-tree">
+              <div class="member-role chair"><b>Chair:</b> Department Head/Assistant Principal</div>
+              <div class="member-role"><b>Members:</b> Teacher 1, Teacher 2, Board Member (if applicable), Admin Staff</div>
+            </div>
+            <table class="task-table">
+              <thead>
+                <tr><th>Task / Phase</th><th>Description</th><th>Assigned Member(s)</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="3" style="background:#fdf3e7;font-weight:bold;">Ongoing / Structural Responsibilities</td>
+                </tr>
+                <tr>
+                  <td>Understand Standards</td>
+                  <td>Deeply understand the Performance Standards within the Leadership for Learning Key Characteristic (Standards 7-15).</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Evidence Gathering</td>
+                  <td>Gather and organize specific evidence supporting each standard, with support from RATs and Data Lead.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Support Narrative</td>
+                  <td>Draft the overall narrative for the Key Characteristic, referencing evidence and incorporating findings from the RATs.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Rating Standards</td>
+                  <td>Rate the standards using the rubrics and document rationale in Notes.md.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Directory Organization</td>
+                  <td>Place evidence in the relevant Evidence_Docs folder and add explanatory notes in Notes.md.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#fdf3e7;font-weight:bold;">Phase 1: Setup & Initial Data Gathering (May–Aug 2025)</td>
+                </tr>
+                <tr>
+                  <td>Review Standards</td>
+                  <td>Review assigned standards in depth and begin identifying potential evidence within existing institutional documents.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#fdf3e7;font-weight:bold;">Phase 2: Data Analysis & Evidence Collection (Sep–Dec 2025)</td>
+                </tr>
+                <tr>
+                  <td>Evidence Collection</td>
+                  <td>Actively collect specific evidence documents for each standard, organizing them within the designated directory structure.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Preliminary Rating</td>
+                  <td>Begin preliminary rating of standards based on gathered evidence, documenting rationale in Notes.md.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#fdf3e7;font-weight:bold;">Phase 3: Narrative Drafting & Initial Review (Jan–Mar 2026)</td>
+                </tr>
+                <tr>
+                  <td>Finalize Evidence & Ratings</td>
+                  <td>Finalize evidence collection and complete the rating for each standard within the characteristic.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Draft Narrative</td>
+                  <td>Draft the comprehensive narrative for the Key Characteristic, integrating findings from RAT reports and citing specific evidence.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Draft Submission</td>
+                  <td>Submit completed draft narrative to the ASC for compilation and review.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#fdf3e7;font-weight:bold;">Phase 4: Revision & Finalization (Apr–May 2026)</td>
+                </tr>
+                <tr>
+                  <td>Revision</td>
+                  <td>Revise narrative and evidence based on QARC and ASC feedback, ensuring accuracy and completeness.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="committee-card kc3-card">
+          <button class="card-header" aria-expanded="false" aria-controls="kc3-details">
+            <span class="committee-title"><i class="fa fa-hands-helping"></i> Engagement of Learning KCWG</span>
+            <span class="expand-icon"><i class="fa fa-chevron-down"></i></span>
+          </button>
+          <div class="card-details" id="kc3-details" hidden>
+            <div class="member-tree">
+              <div class="member-role chair"><b>Chair:</b> Lead Teacher/Instructional Coach</div>
+              <div class="member-role"><b>Members:</b> Teacher 1, Teacher 2, Student Rep, Parent Rep</div>
+            </div>
+            <table class="task-table">
+              <thead>
+                <tr><th>Task / Phase</th><th>Description</th><th>Assigned Member(s)</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="3" style="background:#eafaf1;font-weight:bold;">Ongoing / Structural Responsibilities</td>
+                </tr>
+                <tr>
+                  <td>Understand Standards</td>
+                  <td>Deeply understand the Performance Standards within the Engagement of Learning Key Characteristic (Standards 16-22).</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Evidence Gathering</td>
+                  <td>Gather and organize specific evidence supporting each standard, with support from RATs and Data Lead.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Support Narrative</td>
+                  <td>Draft the overall narrative for the Key Characteristic, referencing evidence and incorporating findings from the RATs.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Rating Standards</td>
+                  <td>Rate the standards using the rubrics and document rationale in Notes.md.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Directory Organization</td>
+                  <td>Place evidence in the relevant Evidence_Docs folder and add explanatory notes in Notes.md.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#eafaf1;font-weight:bold;">Phase 1: Setup & Initial Data Gathering (May–Aug 2025)</td>
+                </tr>
+                <tr>
+                  <td>Review Standards</td>
+                  <td>Review assigned standards in depth and begin identifying potential evidence within existing institutional documents.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#eafaf1;font-weight:bold;">Phase 2: Data Analysis & Evidence Collection (Sep–Dec 2025)</td>
+                </tr>
+                <tr>
+                  <td>Evidence Collection</td>
+                  <td>Actively collect specific evidence documents for each standard, organizing them within the designated directory structure.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Preliminary Rating</td>
+                  <td>Begin preliminary rating of standards based on gathered evidence, documenting rationale in Notes.md.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#eafaf1;font-weight:bold;">Phase 3: Narrative Drafting & Initial Review (Jan–Mar 2026)</td>
+                </tr>
+                <tr>
+                  <td>Finalize Evidence & Ratings</td>
+                  <td>Finalize evidence collection and complete the rating for each standard within the characteristic.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Draft Narrative</td>
+                  <td>Draft the comprehensive narrative for the Key Characteristic, integrating findings from RAT reports and citing specific evidence.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Draft Submission</td>
+                  <td>Submit completed draft narrative to the ASC for compilation and review.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#eafaf1;font-weight:bold;">Phase 4: Revision & Finalization (Apr–May 2026)</td>
+                </tr>
+                <tr>
+                  <td>Revision</td>
+                  <td>Revise narrative and evidence based on QARC and ASC feedback, ensuring accuracy and completeness.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="committee-card kc4-card">
+          <button class="card-header" aria-expanded="false" aria-controls="kc4-details">
+            <span class="committee-title"><i class="fa fa-chart-bar"></i> Growth in Learning KCWG</span>
+            <span class="expand-icon"><i class="fa fa-chevron-down"></i></span>
+          </button>
+          <div class="card-details" id="kc4-details" hidden>
+            <div class="member-tree">
+              <div class="member-role chair"><b>Chair:</b> Assessment Coordinator/Department Head</div>
+              <div class="member-role"><b>Members:</b> Teacher 1, Teacher 2, Data Specialist, Counselor</div>
+            </div>
+            <table class="task-table">
+              <thead>
+                <tr><th>Task / Phase</th><th>Description</th><th>Assigned Member(s)</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="3" style="background:#f6eafc;font-weight:bold;">Ongoing / Structural Responsibilities</td>
+                </tr>
+                <tr>
+                  <td>Understand Standards</td>
+                  <td>Deeply understand the Performance Standards within the Growth in Learning Key Characteristic (Standards 23-28).</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Evidence Gathering</td>
+                  <td>Gather and organize specific evidence supporting each standard, with support from RATs and Data Lead.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Support Narrative</td>
+                  <td>Draft the overall narrative for the Key Characteristic, referencing evidence and incorporating findings from the RATs.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Rating Standards</td>
+                  <td>Rate the standards using the rubrics and document rationale in Notes.md.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Directory Organization</td>
+                  <td>Place evidence in the relevant Evidence_Docs folder and add explanatory notes in Notes.md.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#f6eafc;font-weight:bold;">Phase 1: Setup & Initial Data Gathering (May–Aug 2025)</td>
+                </tr>
+                <tr>
+                  <td>Review Standards</td>
+                  <td>Review assigned standards in depth and begin identifying potential evidence within existing institutional documents.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#f6eafc;font-weight:bold;">Phase 2: Data Analysis & Evidence Collection (Sep–Dec 2025)</td>
+                </tr>
+                <tr>
+                  <td>Evidence Collection</td>
+                  <td>Actively collect specific evidence documents for each standard, organizing them within the designated directory structure.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Preliminary Rating</td>
+                  <td>Begin preliminary rating of standards based on gathered evidence, documenting rationale in Notes.md.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#f6eafc;font-weight:bold;">Phase 3: Narrative Drafting & Initial Review (Jan–Mar 2026)</td>
+                </tr>
+                <tr>
+                  <td>Finalize Evidence & Ratings</td>
+                  <td>Finalize evidence collection and complete the rating for each standard within the characteristic.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Draft Narrative</td>
+                  <td>Draft the comprehensive narrative for the Key Characteristic, integrating findings from RAT reports and citing specific evidence.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Draft Submission</td>
+                  <td>Submit completed draft narrative to the ASC for compilation and review.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#f6eafc;font-weight:bold;">Phase 4: Revision & Finalization (Apr–May 2026)</td>
+                </tr>
+                <tr>
+                  <td>Revision</td>
+                  <td>Revise narrative and evidence based on QARC and ASC feedback, ensuring accuracy and completeness.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="committee-card exec-card">
+          <button class="card-header" aria-expanded="false" aria-controls="exec-details">
+            <span class="committee-title"><i class="fa fa-file-alt"></i> Executive Summary Team</span>
+            <span class="expand-icon"><i class="fa fa-chevron-down"></i></span>
+          </button>
+          <div class="card-details" id="exec-details" hidden>
+            <div class="member-tree">
+              <div class="member-role chair"><b>Lead:</b> Principal/Head of School</div>
+              <div class="member-role"><b>Members:</b> Deputy Head, Department Head Rep, Data Lead, KCWG Chairs</div>
+            </div>
+            <table class="task-table">
+              <thead>
+                <tr><th>Task / Phase</th><th>Description</th><th>Assigned Member(s)</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="3" style="background:#e9f2fb;font-weight:bold;">Ongoing / Structural Responsibilities</td>
+                </tr>
+                <tr>
+                  <td>Draft Executive Summary</td>
+                  <td>Draft the Executive Summary, synthesizing findings from all Key Characteristic Working Groups and RATs.</td>
+                  <td>Lead, All Members</td>
+                </tr>
+                <tr>
+                  <td>Integrate Evidence</td>
+                  <td>Ensure the Executive Summary references key evidence and findings from the self-assessment process.</td>
+                  <td>Lead, All Members</td>
+                </tr>
+                <tr>
+                  <td>Coordinate with ASC</td>
+                  <td>Work closely with the ASC to ensure alignment and completeness of the summary.</td>
+                  <td>Lead, All Members</td>
+                </tr>
+                <tr>
+                  <td>Document Management</td>
+                  <td>Ensure the Executive Summary is placed in the correct directory and formatted according to Cognia requirements.</td>
+                  <td>Lead, All Members</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#e9f2fb;font-weight:bold;">Phase 3: Narrative Drafting & Initial Review (Jan–Mar 2026)</td>
+                </tr>
+                <tr>
+                  <td>Drafting</td>
+                  <td>Draft the Executive Summary, integrating all committee and RAT reports, and submit for ASC review.</td>
+                  <td>Lead, All Members</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#e9f2fb;font-weight:bold;">Phase 4: Revision & Finalization (Apr–May 2026)</td>
+                </tr>
+                <tr>
+                  <td>Revision</td>
+                  <td>Revise the Executive Summary based on feedback from ASC and QARC, ensuring clarity and accuracy.</td>
+                  <td>Lead, All Members</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="committee-card qarc-card">
+          <button class="card-header" aria-expanded="false" aria-controls="qarc-details">
+            <span class="committee-title"><i class="fa fa-check-circle"></i> Quality Assurance & Review Committee (QARC)</span>
+            <span class="expand-icon"><i class="fa fa-chevron-down"></i></span>
+          </button>
+          <div class="card-details" id="qarc-details" hidden>
+            <div class="member-tree">
+              <div class="member-role chair"><b>Chair:</b> External Reviewer/Accreditation Advisor</div>
+              <div class="member-role"><b>Members:</b> Board Member, Senior Teacher, Community Rep</div>
+            </div>
+            <table class="task-table">
+              <thead>
+                <tr><th>Task / Phase</th><th>Description</th><th>Assigned Member(s)</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="3" style="background:#fdf3e7;font-weight:bold;">Ongoing / Structural Responsibilities</td>
+                </tr>
+                <tr>
+                  <td>Quality Assurance</td>
+                  <td>Provide independent review and quality assurance for all self-assessment deliverables.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Feedback</td>
+                  <td>Offer constructive feedback on narratives, evidence, and ratings submitted by all committees and teams.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Alignment Check</td>
+                  <td>Ensure all documentation aligns with Cognia standards and institutional goals.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Support ASC</td>
+                  <td>Support the ASC in finalizing the self-assessment report and preparing for submission.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#fdf3e7;font-weight:bold;">Phase 4: Revision & Finalization (Apr–May 2026)</td>
+                </tr>
+                <tr>
+                  <td>Final Review</td>
+                  <td>Conduct a final review of all self-assessment materials, ensuring completeness and quality.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+                <tr>
+                  <td>Submission Support</td>
+                  <td>Assist the ASC with any final revisions and the official submission to Cognia.</td>
+                  <td>Chair, All Members</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="committee-card ac-card">
+          <button class="card-header" aria-expanded="false" aria-controls="ac-details">
+            <span class="committee-title"><i class="fa fa-user-cog"></i> Accreditation Coordinator (AC)</span>
+            <span class="expand-icon"><i class="fa fa-chevron-down"></i></span>
+          </button>
+          <div class="card-details" id="ac-details" hidden>
+            <div class="member-tree">
+              <div class="member-role chair"><b>Coordinator:</b> Appointed Project Manager/Coordinator</div>
+              <div class="member-role"><b>Members:</b> (If applicable) Admin Support, Communications Liaison</div>
+            </div>
+            <table class="task-table">
+              <thead>
+                <tr><th>Task / Phase</th><th>Description</th><th>Assigned Member(s)</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="3" style="background:#f2f6fa;font-weight:bold;">Ongoing / Structural Responsibilities</td>
+                </tr>
+                <tr>
+                  <td>Central Coordination</td>
+                  <td>Coordinate all accreditation activities, maintain project timeline, and ensure all teams are informed and on track.</td>
+                  <td>Coordinator</td>
+                </tr>
+                <tr>
+                  <td>Communication</td>
+                  <td>Facilitate communication between ASC, Data Lead, RATs, KCWGs, and other teams. Distribute updates and reminders.</td>
+                  <td>Coordinator</td>
+                </tr>
+                <tr>
+                  <td>Scheduling & Meetings</td>
+                  <td>Schedule and organize all committee/team meetings, including kickoffs, check-ins, and milestone reviews.</td>
+                  <td>Coordinator</td>
+                </tr>
+                <tr>
+                  <td>Document Management</td>
+                  <td>Oversee document collection, version control, and ensure all deliverables are properly archived and accessible.</td>
+                  <td>Coordinator</td>
+                </tr>
+                <tr>
+                  <td>Progress Tracking</td>
+                  <td>Monitor progress, update the Gantt chart, and report status to the ASC. Identify and flag risks or delays.</td>
+                  <td>Coordinator</td>
+                </tr>
+                <tr>
+                  <td colspan="3" style="background:#f2f6fa;font-weight:bold;">Phase Responsibilities (Sample)</td>
+                </tr>
+                <tr>
+                  <td>Kickoff Preparation</td>
+                  <td>Prepare materials and agenda for the all-team kickoff meeting. Ensure all members have access to tools and directories.</td>
+                  <td>Coordinator</td>
+                </tr>
+                <tr>
+                  <td>Draft Compilation</td>
+                  <td>Assist in compiling draft reports and narratives for ASC review and submission to QARC.</td>
+                  <td>Coordinator</td>
+                </tr>
+                <tr>
+                  <td>Feedback Distribution</td>
+                  <td>Distribute QARC and ASC feedback to relevant teams and track completion of revisions.</td>
+                  <td>Coordinator</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
       <div class="committee-details">
-        <div class="committee-box asc-desc">
-          <h3 id="asc-desc">Accreditation Steering Committee (ASC)</h3>
-          <ul>
-            <li><b>Mandate:</b> Overall leadership, coordination, and oversight for the self-assessment process.</li>
-            <li><b>Chair:</b> Principal/Head of School</li>
-            <li><b>Members:</b> Deputy Head, Department Head Rep, Business Manager, KCWG Chairs, Data Lead</li>
-          </ul>
-        </div>
-        <div class="committee-box data-desc">
-          <h3 id="data-desc">Data Management & Analysis Lead</h3>
-          <ul>
-            <li><b>Mandate:</b> Oversees data collection plan, directory structure, and quality. Guides RATs, supports KCWGs.</li>
-            <li><b>Lead:</b> Data Specialist/Assessment Coordinator</li>
-          </ul>
-        </div>
-        <div class="committee-box rat-student-desc">
-          <h3 id="rat-student-desc">Student Performance RAT</h3>
-          <ul>
-            <li><b>Mandate:</b> Analyze student performance data. Report findings to KCWGs and ASC.</li>
-            <li><b>Chair:</b> Assessment Coordinator/Math Dept. Head</li>
-          </ul>
-        </div>
-        <div class="committee-box rat-stakeholder-desc">
-          <h3 id="rat-stakeholder-desc">Stakeholder Feedback RAT</h3>
-          <ul>
-            <li><b>Mandate:</b> Analyze stakeholder feedback data. Report findings to KCWGs and ASC.</li>
-            <li><b>Chair:</b> Counselor/Communications Lead</li>
-          </ul>
-        </div>
-        <div class="committee-box rat-learning-desc">
-          <h3 id="rat-learning-desc">Learning Environment RAT</h3>
-          <ul>
-            <li><b>Mandate:</b> Analyze learning environment data. Report findings to KCWGs and ASC.</li>
-            <li><b>Chair:</b> Instructional Coach/Assistant Principal</li>
-          </ul>
-        </div>
-        <div class="committee-box kc1-desc">
-          <h3 id="kc1-desc" class="kc1">Culture of Learning KCWG</h3>
-          <ul>
-            <li><b>Mandate:</b> Gather evidence, rate standards, draft narrative for Culture of Learning (Standards 1-6).</li>
-            <li><b>Chair:</b> Counselor/Dean of Students</li>
-            <li><b>Members:</b> Teachers, Support Staff, Parent Rep</li>
-          </ul>
-        </div>
-        <div class="committee-box kc2-desc">
-          <h3 id="kc2-desc" class="kc2">Leadership for Learning KCWG</h3>
-          <ul>
-            <li><b>Mandate:</b> Gather evidence, rate standards, draft narrative for Leadership for Learning (Standards 7-15).</li>
-            <li><b>Chair:</b> Department Head/Assistant Principal</li>
-            <li><b>Members:</b> Teachers, Board Member, Admin Staff</li>
-          </ul>
-        </div>
-        <div class="committee-box kc3-desc">
-          <h3 id="kc3-desc" class="kc3">Engagement of Learning KCWG</h3>
-          <ul>
-            <li><b>Mandate:</b> Gather evidence, rate standards, draft narrative for Engagement of Learning (Standards 16-23).</li>
-            <li><b>Chair:</b> Curriculum Coordinator/Tech Integration Specialist</li>
-            <li><b>Members:</b> Teachers, Librarian, Student Rep</li>
-          </ul>
-        </div>
-        <div class="committee-box kc4-desc">
-          <h3 id="kc4-desc" class="kc4">Growth in Learning KCWG</h3>
-          <ul>
-            <li><b>Mandate:</b> Gather evidence, rate standards, draft narrative for Growth in Learning (Standards 24-31).</li>
-            <li><b>Chair:</b> Assessment Coordinator/Instructional Coach</li>
-            <li><b>Members:</b> Teachers, Special Ed Lead, PD Coordinator</li>
-          </ul>
-        </div>
-        <div class="committee-box exec-desc">
-          <h3 id="exec-desc">Executive Summary Team</h3>
-          <ul>
-            <li><b>Mandate:</b> Drafts the Executive Summary based on input from all teams.</li>
-            <li><b>Lead:</b> Accreditation Coordinator</li>
-            <li><b>Members:</b> Principal/Head of School, Communications Lead/Writer</li>
-          </ul>
-        </div>
-        <div class="committee-box qarc-desc">
-          <h3 id="qarc-desc">Quality Assurance & Review Committee (QARC)</h3>
-          <ul>
-            <li><b>Mandate:</b> Independent review of the draft self-assessment report. Provide feedback to ASC and teams.</li>
-            <li><b>Chair:</b> Senior Staff Member (not on ASC or KCWG Chair)</li>
-            <li><b>Members:</b> Teachers (other depts/grades), Admin/Support Staff, External Peer Reviewer (optional)</li>
-          </ul>
-        </div>
+        <!-- Removed old committee-box.qarc-desc card for Quality Assurance & Review Committee (QARC) -->
       </div>
       <script>
-        // Smooth scroll and highlight for committee details
+        // Smooth scroll, expand, and highlight for committee cards
         document.querySelectorAll('.org-node.clickable').forEach(function(node) {
           node.setAttribute('tabindex', '0');
           node.setAttribute('role', 'button');
           node.setAttribute('aria-label', node.textContent + ' details');
           node.addEventListener('click', function() {
+            // Map org-node data-targets to card-details IDs
+            var map = {
+              'asc-desc': 'asc-details',
+              'ac-desc': 'ac-details',
+              'data-desc': 'data-details',
+              'rat-student-desc': 'rat-student-details',
+              'rat-stakeholder-desc': 'rat-stakeholder-details',
+              'rat-learning-desc': 'rat-learning-details',
+              'kc1-desc': 'kc1-details',
+              'kc2-desc': 'kc2-details',
+              'kc3-desc': 'kc3-details',
+              'kc4-desc': 'kc4-details',
+              'exec-desc': 'exec-details',
+              'qarc-desc': 'qarc-details'
+            };
             var targetId = node.getAttribute('data-target');
-            var target = document.getElementById(targetId);
+            var cardId = map[targetId];
+            var target = cardId ? document.getElementById(cardId) : null;
             if (target) {
-              target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              // Expand the card if not already expanded
+              var card = target.closest('.committee-card');
+              var header = card.querySelector('.card-header');
+              if (header.getAttribute('aria-expanded') !== 'true') {
+                header.setAttribute('aria-expanded', 'true');
+                target.hidden = false;
+              }
+              card.scrollIntoView({ behavior: 'smooth', block: 'center' });
               target.classList.add('highlight-detail');
               setTimeout(function() { target.classList.remove('highlight-detail'); }, 1800);
             }
           });
           node.addEventListener('keydown', function(e) {
             if (e.key === 'Enter' || e.key === ' ') node.click();
+          });
+        });
+        // Expand/collapse logic for committee cards
+        document.querySelectorAll('.committee-card .card-header').forEach(function(btn) {
+          btn.addEventListener('click', function() {
+            var expanded = btn.getAttribute('aria-expanded') === 'true';
+            btn.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+            var details = btn.parentElement.querySelector('.card-details');
+            if (details) details.hidden = expanded;
           });
         });
       </script>

@@ -7,6 +7,10 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" href="assets/img/favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/frappe-gantt.css">
+  <script src="assets/js/frappe-gantt.umd.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
 </head>
 <body>
   <header>
@@ -30,130 +34,686 @@
   <main>
     <section class="content">
       <h1>Accreditation Timeline</h1>
-      <p>The Cognia accreditation process follows a structured timeline with key phases and milestones:</p>
-      <div class="vertical-timeline">
-        <div class="timeline-item">
-          <div class="timeline-icon" style="background:#1a73e8;"><i class="fa fa-users"></i></div>
-          <div class="timeline-content">
-            <div class="timeline-date">May – Aug 2025</div>
-            <b>Setup & Initial Data Gathering</b>
-            <ul>
-              <li>Appoint teams and confirm roles</li>
-              <li>Kickoff meeting and orientation</li>
-              <li>Establish directory structure and permissions</li>
-              <li>Begin data collection (existing sources, surveys, observations)</li>
-              <li>Initial evidence review by KCWGs</li>
-            </ul>
+      <div class="tabs timeline-tabs">
+        <button class="tab-link active" data-tab="overall-timeline">Overall Timeline</button>
+        <button class="tab-link" data-tab="detailed-timeline">Detailed Timeline</button>
+      </div>
+      <div class="tab-content" id="overall-timeline" style="display:block;">
+        <p>The Cognia accreditation process follows a structured timeline with key phases and milestones:</p>
+        <div class="vertical-timeline">
+          <div class="timeline-item">
+            <div class="timeline-icon" style="background:#1a73e8;"><i class="fa fa-users"></i></div>
+            <div class="timeline-content">
+              <div class="timeline-date">May – Aug 2025</div>
+              <b>Setup & Initial Data Gathering</b>
+              <ul>
+                <li>Appoint teams and confirm roles</li>
+                <li>Kickoff meeting and orientation</li>
+                <li>Establish directory structure and permissions</li>
+                <li>Begin data collection (existing sources, surveys, observations)</li>
+                <li>Initial evidence review by KCWGs</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-icon" style="background:#e67e22;"><i class="fa fa-database"></i></div>
-          <div class="timeline-content">
-            <div class="timeline-date">Sep – Dec 2025</div>
-            <b>Data Analysis & Evidence Collection</b>
-            <ul>
-              <li>Continue data collection and cleaning</li>
-              <li>Conduct observations and analyze data</li>
-              <li>KCWGs collect and organize evidence for each standard</li>
-              <li>Preliminary findings and progress check-ins</li>
-            </ul>
+          <div class="timeline-item">
+            <div class="timeline-icon" style="background:#e67e22;"><i class="fa fa-database"></i></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Sep – Dec 2025</div>
+              <b>Data Analysis & Evidence Collection</b>
+              <ul>
+                <li>Continue data collection and cleaning</li>
+                <li>Conduct observations and analyze data</li>
+                <li>KCWGs collect and organize evidence for each standard</li>
+                <li>Preliminary findings and progress check-ins</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-icon" style="background:#27ae60;"><i class="fa fa-file-alt"></i></div>
-          <div class="timeline-content">
-            <div class="timeline-date">Jan – Mar 2026</div>
-            <b>Narrative Drafting & Initial Review</b>
-            <ul>
-              <li>Draft narratives for required analyses and key characteristics</li>
-              <li>Finalize evidence collection and ratings</li>
-              <li>Compile first full draft of Self-Assessment Report</li>
-              <li>Submit draft to Quality Assurance & Review Committee (QARC)</li>
-            </ul>
+          <div class="timeline-item">
+            <div class="timeline-icon" style="background:#27ae60;"><i class="fa fa-file-alt"></i></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Jan – Mar 2026</div>
+              <b>Narrative Drafting & Initial Review</b>
+              <ul>
+                <li>Draft narratives for required analyses and key characteristics</li>
+                <li>Finalize evidence collection and ratings</li>
+                <li>Compile first full draft of Self-Assessment Report</li>
+                <li>Submit draft to Quality Assurance & Review Committee (QARC)</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-icon" style="background:#8e44ad;"><i class="fa fa-pen-to-square"></i></div>
-          <div class="timeline-content">
-            <div class="timeline-date">Apr – May 2026</div>
-            <b>Revision & Finalization</b>
-            <ul>
-              <li>QARC reviews and provides feedback</li>
-              <li>Teams revise sections as needed</li>
-              <li>Compile and approve final report</li>
-            </ul>
+          <div class="timeline-item">
+            <div class="timeline-icon" style="background:#8e44ad;"><i class="fa fa-pen-to-square"></i></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Apr – May 2026</div>
+              <b>Revision & Finalization</b>
+              <ul>
+                <li>QARC reviews and provides feedback</li>
+                <li>Teams revise sections as needed</li>
+                <li>Compile and approve final report</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-icon" style="background:#34495e;"><i class="fa fa-check-circle"></i></div>
-          <div class="timeline-content">
-            <div class="timeline-date">End of May 2026</div>
-            <b>Submission</b>
-            <ul>
-              <li>Submit final Self-Assessment Report and evidence to Cognia</li>
-              <li>Celebrate milestone!</li>
-            </ul>
+          <div class="timeline-item">
+            <div class="timeline-icon" style="background:#34495e;"><i class="fa fa-check-circle"></i></div>
+            <div class="timeline-content">
+              <div class="timeline-date">End of May 2026</div>
+              <b>Submission</b>
+              <ul>
+                <li>Submit final Self-Assessment Report and evidence to Cognia</li>
+                <li>Celebrate milestone!</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-      <style>
-        .vertical-timeline {
-          position: relative;
-          margin: 2.5em 0 2em 0;
-          padding-left: 2.5em;
-          border-left: 3px solid #e0e7ef;
-        }
-        .timeline-item {
-          position: relative;
-          margin-bottom: 2.5em;
-          display: flex;
-          align-items: flex-start;
-        }
-        .timeline-icon {
-          position: absolute;
-          left: -1.45em;
-          top: 0.1em;
-          width: 2.5em;
-          height: 2.5em;
-          border-radius: 50%;
-          color: #fff;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 1.3em;
-          box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-          border: 3px solid #fff;
-        }
-        .timeline-content {
-          background: #f9fbfd;
-          border-radius: 8px;
-          padding: 1.1em 1.5em 1.1em 1.5em;
-          margin-left: 1.5em;
-          box-shadow: 0 2px 8px rgba(26,115,232,0.04);
-          min-width: 250px;
-        }
-        .timeline-date {
-          font-size: 0.98em;
-          color: #1a73e8;
-          font-weight: 500;
-          margin-bottom: 0.3em;
-        }
-        .timeline-content b {
-          font-size: 1.08em;
-        }
-        .timeline-content ul {
-          margin: 0.7em 0 0 1.1em;
-          padding: 0;
-        }
-        .timeline-content li {
-          margin-bottom: 0.3em;
-          font-size: 0.98em;
-        }
-        @media (max-width: 700px) {
-          .vertical-timeline { padding-left: 1.2em; }
-          .timeline-content { padding: 1em 0.7em 1em 0.7em; }
-        }
-      </style>
+      <div class="tab-content" id="detailed-timeline" style="display:none;">
+        <div style="margin-bottom: 1.2em; text-align: center; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 1.5em;">
+          <div>
+            <label for="phase-multiselect" style="font-weight:600;color:#1a73e8;margin-right:0.7em;">Phases:</label>
+            <div class="custom-multiselect" id="phase-multiselect">
+              <div class="select-box" onclick="toggleDropdown()">
+                <span id="selected-phases">All Phases</span>
+                <i class="fa fa-caret-down"></i>
+              </div>
+              <div class="options" id="phase-options">
+                <label><input type="checkbox" value="phase1" checked> Setup & Initial Data Gathering</label>
+                <label><input type="checkbox" value="phase2" checked> Data Analysis & Evidence Collection</label>
+                <label><input type="checkbox" value="phase3" checked> Narrative Drafting & Initial Review</label>
+                <label><input type="checkbox" value="phase4" checked> Revision & Finalization</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="gantt-table-container" style="overflow-x: auto; max-width: 100%;">
+          <table class="gantt-table">
+            <tr>
+              <th>Committee/Team</th>
+              <th>Jul 1–7</th>
+              <th>Jul 8–14</th>
+              <th>Jul 15–21</th>
+              <th>Jul 22–28</th>
+              <th>Jul 29–Aug 4</th>
+              <th>Aug 5–11</th>
+              <th>Aug 12–18</th>
+              <th>Aug 19–25</th>
+              <th>Aug 26–30</th>
+            </tr>
+            <tr>
+              <td><b>ASC</b></td>
+              <td><div class="gantt-bar-row-flex">
+                <div class="gantt-bar bar-asc" id="task-1-1" tabindex="0"
+                  data-task-name="Finalize Team Appointments & Roles"
+                  data-description="Finalize team member appointments & confirm roles."
+                  data-team="ASC Chair / Principal"
+                  data-start="2025-07-01"
+                  data-end="2025-07-05"
+                  data-dependency="N/A"
+                  data-deliverable="Confirmed team roster with assigned roles and mandates."
+                  data-collaboration="ASC meeting to approve final appointments."
+                >Finalize Team Appointments</div>
+                <span class="meeting-icon-tooltip" tabindex="0">
+                  <i class="fa fa-users" aria-label="Meeting details" role="img"></i>
+                  <span class="meeting-tooltip-content" role="tooltip">
+                    <b>Meeting Details</b><br>
+                    <span class="tooltip-label">Organizer:</span> ASC Chair / Principal<br>
+                    <span class="tooltip-label">Participants:</span> ASC Chair / Principal<br>
+                    <span class="tooltip-label">Purpose:</span> ASC meeting to approve final appointments
+                  </span>
+                </span>
+              </div></td>
+              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+              <td><b>AC</b></td>
+              <td></td>
+              <td><div class="gantt-bar-row-flex">
+                <div class="gantt-bar bar-ac" id="task-1-2" tabindex="0"
+                  data-task-name="Conduct All-Team Kickoff Meeting & Orientation"
+                  data-description="Schedule & conduct kickoff meeting/orientation for all teams (review standards, process, timeline, tools, directory structure)."
+                  data-team="Accreditation Coordinator"
+                  data-start="2025-07-08"
+                  data-end="2025-07-12"
+                  data-dependency="Finalize Team Appointments"
+                  data-deliverable="Shared understanding of Cognia standards, self-assessment process, overall timeline, available tools, and the data directory structure."
+                  data-collaboration="Mandatory All-Team Kickoff Meeting."
+                >Kickoff Meeting</div>
+                <span class="meeting-icon-tooltip" tabindex="0">
+                  <i class="fa fa-users" aria-label="Meeting details" role="img"></i>
+                  <span class="meeting-tooltip-content" role="tooltip">
+                    <b>Meeting Details</b><br>
+                    <span class="tooltip-label">Organizer:</span> Accreditation Coordinator<br>
+                    <span class="tooltip-label">Participants:</span> All Teams (ASC, AC, DMAL, RAT Chairs, KCWG Chairs, EST Lead)<br>
+                    <span class="tooltip-label">Purpose:</span> Mandatory All-Team Kickoff Meeting
+                  </span>
+                </span>
+              </div></td>
+              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+              <td><b>DMAL</b></td>
+              <td></td>
+              <td><div class="gantt-bar-row-flex">
+                <div class="gantt-bar bar-data" id="task-1-3" tabindex="0"
+                  data-task-name="Confirm Data Directory Structure & Access Permissions"
+                  data-description="Confirm data directory structure, access permissions, and any required tools."
+                  data-team="Data Management & Analysis Lead"
+                  data-start="2025-07-08"
+                  data-end="2025-07-19"
+                  data-dependency="Kickoff Meeting"
+                  data-deliverable="Fully functional and accessible evidence directory with correct permissions."
+                  data-collaboration="DMAL/AC working sessions; IT department consultation."
+                >Confirm Data Directory</div>
+                <span class="meeting-icon-tooltip" tabindex="0">
+                  <i class="fa fa-users" aria-label="Meeting details" role="img"></i>
+                  <span class="meeting-tooltip-content" role="tooltip">
+                    <b>Meeting Details</b><br>
+                    <span class="tooltip-label">Organizer:</span> Data Management & Analysis Lead<br>
+                    <span class="tooltip-label">Participants:</span> Accreditation Coordinator, IT Department<br>
+                    <span class="tooltip-label">Purpose:</span> Working session to confirm directory structure, permissions, and tools
+                  </span>
+                </span>
+              </div></td>
+              <td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+              <td><b>SP-RAT</b></td>
+              <td></td><td></td>
+              <td colspan="2"><div class="gantt-bar bar-rat" id="task-1-4-1" tabindex="0"
+                data-task-name="SP-RAT: Identify Existing Student Performance Data Sources"
+                data-description="Identify existing relevant student performance data sources (standardized test results, internal assessments, raw data files, trend data availability)."
+                data-team="SP-RAT"
+                data-start="2025-07-15"
+                data-end="2025-08-02"
+                data-dependency="Kickoff Meeting, Confirm Data Directory"
+                data-deliverable="Comprehensive list of existing student performance data sources."
+                data-collaboration="SP-RAT internal meetings; DMAL guidance on data source evaluation."
+              >Identify Student Perf. Data</div></td>
+              <td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+              <td><b>SF-RAT</b></td>
+              <td></td><td></td>
+              <td colspan="3"><div class="gantt-bar bar-rat" id="task-1-4-2" tabindex="0"
+                data-task-name="SF-RAT: Identify Existing Stakeholder Feedback Data Sources & Plan Surveys"
+                data-description="Identify existing stakeholder feedback data (surveys, focus groups), and plan for administering new surveys (if required) including instrument selection and timelines."
+                data-team="SF-RAT"
+                data-start="2025-07-15"
+                data-end="2025-08-09"
+                data-dependency="Kickoff Meeting, Confirm Data Directory"
+                data-deliverable="List of existing stakeholder feedback data and a detailed plan for new surveys."
+                data-collaboration="SF-RAT internal meetings; DMAL consultation on survey quality and administration."
+              >Identify Stakeholder Data & Plan Surveys</div></td>
+              <td></td>
+              <td><div class="gantt-bar bar-rat" id="task-1-5-2" tabindex="0"
+                data-task-name="SF-RAT: Deploy Stakeholder Surveys (if applicable)"
+                data-description="Deploy stakeholder surveys (if applicable) and collect initial responses."
+                data-team="SF-RAT"
+                data-start="2025-08-12"
+                data-end="2025-08-30"
+                data-dependency="Plan Surveys"
+                data-deliverable="Stakeholder surveys successfully administered and initial responses collected."
+                data-collaboration="SF-RAT internal coordination with communications team."
+              >Deploy Surveys</div></td>
+              <td></td><td></td>
+            </tr>
+            <tr>
+              <td><b>LE-RAT</b></td>
+              <td></td><td></td>
+              <td colspan="3"><div class="gantt-bar bar-rat" id="task-1-4-3" tabindex="0"
+                data-task-name="LE-RAT: Plan Learning Environment Observations & Observer Status"
+                data-description="Plan learning environment observations, confirm observer availability, and verify observer training/calibration status (e.g., eleot certification)."
+                data-team="LE-RAT"
+                data-start="2025-07-15"
+                data-end="2025-08-09"
+                data-dependency="Kickoff Meeting, Confirm Data Directory"
+                data-deliverable="Detailed observation schedule, confirmation of observer availability, and verification of observer training/calibration status."
+                data-collaboration="LE-RAT internal meetings; AC for training resources."
+              >Plan Observations & Observer Status</div></td>
+              <td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+              <td><b>KCWGs</b></td>
+              <td></td><td></td>
+              <td colspan="5"><div class="gantt-bar bar-kcwg" id="task-1-4-4" tabindex="0"
+                data-task-name="KCWGs: In-depth Review of Assigned Standards & Initial Evidence Identification"
+                data-description="Review assigned standards in depth and begin identifying potential evidence within existing institutional documents."
+                data-team="KCWGs"
+                data-start="2025-07-15"
+                data-end="2025-08-23"
+                data-dependency="Kickoff Meeting, Confirm Data Directory"
+                data-deliverable="Deep understanding of assigned Cognia Performance Standards, and a preliminary list of potential evidence documents."
+                data-collaboration="Individual KCWG meetings; AC for standards clarification."
+              >Review Standards & Identify Evidence</div></td>
+              <td></td><td></td>
+            </tr>
+            <tr>
+              <td><b>All RATs</b></td>
+              <td></td><td></td><td></td><td></td>
+              <td colspan="2"><div class="gantt-bar bar-rat" id="task-1-5-1" tabindex="0"
+                data-task-name="RATs: Begin Systematic Data Collection"
+                data-description="Begin systematic data collection for all RATs."
+                data-team="All RATs"
+                data-start="2025-08-05"
+                data-end="2025-08-30"
+                data-dependency="Identify Data Sources"
+                data-deliverable="Initial raw data collected and organized in respective subdirectories."
+                data-collaboration="DMAL check-in with RATs for initial data intake."
+              >Begin Data Collection</div></td>
+              <td></td><td></td>
+            </tr>
+            <tr>
+              <td><b>Milestone</b></td>
+              <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+              <td colspan="2"><div class="gantt-bar bar-milestone" id="task-1-milestone" tabindex="0"
+                data-task-name="Milestone: Initial Data Gathering Underway"
+                data-description="All teams established, oriented, and initial data gathering activities successfully commenced."
+                data-team="ASC, AC"
+                data-start="2025-08-30"
+                data-end="2025-08-30"
+                data-dependency="Begin Data Collection, Deploy Surveys"
+                data-deliverable="All teams established, oriented, and initial data gathering activities successfully commenced."
+                data-collaboration="ASC monthly progress review meeting."
+              >Initial Data Gathering Underway</div></td>
+            </tr>
+          </table>
+        </div>
+        <div id="task-info-card" style="max-width: 600px; margin: 2em auto 0 auto; display: none;"></div>
+        <style>
+          .timeline-tabs { margin-bottom: 2em; }
+          .tab-link {
+            background: #f7fafd;
+            border: 1.5px solid #e0e7ef;
+            border-bottom: none;
+            color: #1a73e8;
+            font-weight: 600;
+            padding: 0.7em 1.7em;
+            border-radius: 10px 10px 0 0;
+            margin-right: 0.5em;
+            cursor: pointer;
+            outline: none;
+            transition: background 0.18s, color 0.18s;
+          }
+          .tab-link.active, .tab-link:focus {
+            background: #fff;
+            color: #2c3e50;
+            border-bottom: 3px solid #fff;
+          }
+          .tab-content { background: #fff; border-radius: 0 0 10px 10px; box-shadow: 0 2px 8px rgba(44,62,80,0.06); padding: 2em 2em 2.5em 2em; margin-bottom: 2em; }
+          .detailed-timeline-placeholder { text-align: center; color: #888; padding: 3em 0; }
+          .vertical-timeline {
+            position: relative;
+            margin: 2.5em 0 2em 0;
+            padding-left: 2.5em;
+            border-left: 3px solid #e0e7ef;
+          }
+          .timeline-item {
+            position: relative;
+            margin-bottom: 2.5em;
+            display: flex;
+            align-items: flex-start;
+          }
+          .timeline-icon {
+            position: absolute;
+            left: -1.45em;
+            top: 0.1em;
+            width: 2.5em;
+            height: 2.5em;
+            border-radius: 50%;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3em;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            border: 3px solid #fff;
+          }
+          .timeline-content {
+            background: #f9fbfd;
+            border-radius: 8px;
+            padding: 1.1em 1.5em 1.1em 1.5em;
+            margin-left: 1.5em;
+            box-shadow: 0 2px 8px rgba(26,115,232,0.04);
+            min-width: 250px;
+          }
+          .timeline-date {
+            font-size: 0.98em;
+            color: #1a73e8;
+            font-weight: 500;
+            margin-bottom: 0.3em;
+          }
+          .timeline-content b {
+            font-size: 1.08em;
+          }
+          .timeline-content ul {
+            margin: 0.7em 0 0 1.1em;
+            padding: 0;
+          }
+          .timeline-content li {
+            margin-bottom: 0.3em;
+            font-size: 0.98em;
+          }
+          /* Custom multiselect styles */
+          .custom-multiselect {
+            position: relative;
+            display: inline-block;
+            min-width: 240px;
+            font-size: 1.05em;
+          }
+          .select-box {
+            border: 1.5px solid #e0e7ef;
+            border-radius: 7px;
+            background: #fff;
+            padding: 0.4em 1.7em 0.4em 0.7em;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .select-box i {
+            margin-left: 0.7em;
+            color: #888;
+          }
+          .options {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            width: 320px;
+            max-width: 95vw;
+            background: #fff;
+            border: 1.5px solid #e0e7ef;
+            border-radius: 0 0 7px 7px;
+            box-shadow: 0 8px 32px rgba(44,62,80,0.18), 0 2px 8px rgba(44,62,80,0.08);
+            z-index: 1002;
+            padding: 0.5em 0.7em;
+          }
+          .options label {
+            display: block;
+            padding: 0.2em 0;
+            cursor: pointer;
+            font-weight: 400;
+          }
+          .options input[type="checkbox"] {
+            margin-right: 0.7em;
+          }
+          .custom-multiselect.open .options {
+            display: block;
+          }
+          @media (max-width: 700px) {
+            .vertical-timeline { padding-left: 1.2em; }
+            .timeline-content { padding: 1em 0.7em 1em 0.7em; }
+          }
+          .gantt-table { border-collapse: collapse; width: 100%; margin: 2em 0; font-size: 1em; }
+          .gantt-table th, .gantt-table td { border: 1px solid #e0e7ef; padding: 0.5em 0.3em; text-align: center; min-width: 70px; }
+          .gantt-bar { background: #4caf50; color: #fff; border-radius: 4px; padding: 0.2em 0.5em; font-weight: 500; font-size: 0.98em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+          .bar-asc { background: #1a73e8; }
+          .bar-ac { background: #009688; }
+          .bar-data { background: #e67e22; }
+          .bar-rat { background: #8e44ad; }
+          .bar-kcwg { background: #27ae60; }
+          .bar-milestone { background: #34495e; border: 2px solid #ffd700; color: #ffd700; }
+          @media (max-width: 900px) {
+            .gantt-table th, .gantt-table td { font-size: 0.92em; min-width: 48px; }
+            .gantt-bar { font-size: 0.92em; }
+          }
+          .task-info-card-box {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(44,62,80,0.10);
+            padding: 1.5em 2em;
+            margin-top: 0.5em;
+            border-left: 6px solid #1a73e8;
+          }
+          .task-info-card-box h3 { margin-top: 0; color: #1a73e8; }
+          .task-info-card-box .info-label { font-weight: 600; color: #34495e; }
+          .task-info-card-box .info-value { margin-bottom: 0.7em; display: block; }
+          .task-info-card-box .info-row { margin-bottom: 0.5em; }
+          .gantt-bar-row-flex {
+            display: flex;
+            align-items: center;
+            gap: 0.4em;
+            height: 100%;
+          }
+          .meeting-icon-tooltip {
+            position: relative;
+            display: inline-block;
+            margin-left: 0.1em;
+            vertical-align: middle;
+            cursor: pointer;
+            outline: none;
+            z-index: 1050;
+          }
+          .meeting-icon-tooltip i.fa-users {
+            color: #e53935;
+            font-size: 1.1em;
+            background: #f7fafd;
+            border-radius: 50%;
+            padding: 0.18em 0.28em;
+            box-shadow: 0 1px 4px rgba(229,57,53,0.10);
+            transition: background 0.18s, color 0.18s;
+          }
+          .meeting-icon-tooltip:hover i.fa-users,
+          .meeting-icon-tooltip:focus i.fa-users,
+          .meeting-icon-tooltip:focus-within i.fa-users {
+            color: #fff;
+            background: #e53935;
+          }
+          .meeting-tooltip-content {
+            display: none;
+            position: absolute;
+            min-width: 240px;
+            background: rgba(255,255,255,0.98);
+            color: #34495e;
+            border-radius: 10px;
+            box-shadow: 0 8px 32px rgba(44,62,80,0.18), 0 2px 8px rgba(44,62,80,0.12);
+            padding: 1.1em 1.3em 1.1em 1.3em;
+            z-index: 9999;
+            font-size: 1em;
+            text-align: left;
+            border: 2px solid #1a73e8;
+            pointer-events: auto;
+            opacity: 0;
+            transition: opacity 0.18s;
+            font-family: inherit;
+            font-weight: 400;
+            filter: drop-shadow(0 4px 24px rgba(44,62,80,0.18));
+          }
+          .meeting-tooltip-content.tooltip-up {
+            left: 50%;
+            bottom: 120%;
+            transform: translateX(-50%);
+          }
+          .meeting-tooltip-content.tooltip-down {
+            left: 50%;
+            top: 120%;
+            bottom: auto;
+            transform: translateX(-50%);
+          }
+          .meeting-tooltip-content.tooltip-left {
+            right: 110%;
+            left: auto;
+            top: 50%;
+            bottom: auto;
+            transform: translateY(-50%);
+          }
+          .meeting-tooltip-content.tooltip-right {
+            left: 110%;
+            top: 50%;
+            bottom: auto;
+            transform: translateY(-50%);
+          }
+          .meeting-tooltip-content::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            border-width: 8px;
+            border-style: solid;
+            filter: drop-shadow(0 2px 4px rgba(44,62,80,0.10));
+          }
+          .meeting-tooltip-content.tooltip-up::after {
+            top: 100%;
+            border-color: #1a73e8 transparent transparent transparent;
+          }
+          .meeting-tooltip-content.tooltip-down::after {
+            bottom: 100%;
+            border-color: transparent transparent #1a73e8 transparent;
+          }
+          .meeting-tooltip-content.tooltip-left::after {
+            left: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            border-width: 8px 0 8px 8px;
+            border-color: transparent transparent transparent #1a73e8;
+          }
+          .meeting-tooltip-content.tooltip-right::after {
+            right: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            border-width: 8px 8px 8px 0;
+            border-color: transparent #1a73e8 transparent transparent;
+          }
+          .meeting-icon-tooltip:hover .meeting-tooltip-content,
+          .meeting-icon-tooltip:focus .meeting-tooltip-content,
+          .meeting-icon-tooltip:focus-within .meeting-tooltip-content {
+            display: block;
+            opacity: 1;
+            pointer-events: auto;
+          }
+          .meeting-tooltip-content b {
+            color: #1a73e8;
+            font-size: 1.09em;
+            display: block;
+            margin-bottom: 0.4em;
+            font-weight: 700;
+          }
+          .meeting-tooltip-content .tooltip-label {
+            font-weight: 600;
+            color: #1a73e8;
+            margin-right: 0.3em;
+          }
+        </style>
+        <script>
+          // Tab switching logic
+          document.querySelectorAll('.tab-link').forEach(function(tab) {
+            tab.addEventListener('click', function() {
+              document.querySelectorAll('.tab-link').forEach(function(t) { t.classList.remove('active'); });
+              document.querySelectorAll('.tab-content').forEach(function(tc) { tc.style.display = 'none'; });
+              tab.classList.add('active');
+              document.getElementById(tab.getAttribute('data-tab')).style.display = 'block';
+            });
+          });
+        </script>
+        <script>
+          // Custom multiselect dropdown logic
+          function toggleDropdown() {
+            document.getElementById('phase-multiselect').classList.toggle('open');
+          }
+          document.addEventListener('click', function(e) {
+            const box = document.getElementById('phase-multiselect');
+            if (box && !box.contains(e.target)) box.classList.remove('open');
+          });
+          const phaseOptions = document.querySelectorAll('#phase-options input[type=checkbox]');
+          const selectedPhasesSpan = document.getElementById('selected-phases');
+          // Phase time frames from the project plan
+          const phaseTimeFrames = {
+            phase1: { start: '2025-07-01', end: '2025-08-30' }, // Setup & Initial Data Gathering
+            phase2: { start: '2025-09-02', end: '2025-12-20' }, // Data Analysis & Evidence Collection
+            phase3: { start: '2026-01-06', end: '2026-03-21' }, // Narrative Drafting & Initial Review
+            phase4: { start: '2026-04-01', end: '2026-05-31' }  // Revision & Finalization (from overall timeline)
+          };
+          function getSelectedPhases() {
+            return Array.from(phaseOptions).filter(cb => cb.checked).map(cb => cb.value);
+          }
+          function getPhaseDateRange(selectedPhases) {
+            if (!selectedPhases.length || selectedPhases.length === Object.keys(phaseTimeFrames).length) {
+              // All phases selected: show full project range
+              return { start: '2025-07-01', end: '2026-05-31' };
+            }
+            let minStart = '9999-12-31', maxEnd = '0000-01-01';
+            selectedPhases.forEach(phase => {
+              const tf = phaseTimeFrames[phase];
+              if (tf.start < minStart) minStart = tf.start;
+              if (tf.end > maxEnd) maxEnd = tf.end;
+            });
+            return { start: minStart, end: maxEnd };
+          }
+          function updateSelectedPhases() {
+            const checked = Array.from(phaseOptions).filter(cb => cb.checked);
+            if (checked.length === 0 || checked.length === phaseOptions.length) {
+              selectedPhasesSpan.textContent = 'All Phases';
+            } else {
+              selectedPhasesSpan.textContent = checked.map(cb => cb.parentElement.textContent.trim()).join(', ');
+            }
+          }
+          phaseOptions.forEach(cb => cb.addEventListener('change', updateSelectedPhases));
+          updateSelectedPhases();
+        </script>
+        <script>
+          // Task info card logic (for all Phase 1 tasks)
+          document.querySelectorAll('.gantt-bar[tabindex="0"]').forEach(function(bar) {
+            bar.addEventListener('click', function() {
+              const card = document.getElementById('task-info-card');
+              // Get the computed background color of the bar
+              const barColor = window.getComputedStyle(bar).backgroundColor;
+              card.innerHTML = `
+                <div class="task-info-card-box" style="border-left: 6px solid ${barColor};">
+                  <h3 style="color: ${barColor};">${bar.dataset.taskName}</h3>
+                  <div class="info-row"><span class="info-label">Description:</span> <span class="info-value">${bar.dataset.description}</span></div>
+                  <div class="info-row"><span class="info-label">Responsible Team(s):</span> <span class="info-value">${bar.dataset.team}</span></div>
+                  <div class="info-row"><span class="info-label">Start Date:</span> <span class="info-value">${bar.dataset.start}</span></div>
+                  <div class="info-row"><span class="info-label">End Date:</span> <span class="info-value">${bar.dataset.end}</span></div>
+                  <div class="info-row"><span class="info-label">Dependency:</span> <span class="info-value">${bar.dataset.dependency}</span></div>
+                  <div class="info-row"><span class="info-label">Key Deliverable/Milestone:</span> <span class="info-value">${bar.dataset.deliverable}</span></div>
+                  <div class="info-row"><span class="info-label">Collaboration/Meeting Point:</span> <span class="info-value">${bar.dataset.collaboration}</span></div>
+                </div>
+              `;
+              card.style.display = 'block';
+            });
+          });
+        </script>
+        <script>
+          // Smart tooltip direction for meeting icon
+          function setMeetingTooltipDirection(icon) {
+            var tooltip = icon.querySelector('.meeting-tooltip-content');
+            if (!tooltip) return;
+            // Default to up
+            var direction = 'tooltip-up';
+            var rect = tooltip.getBoundingClientRect();
+            var iconRect = icon.getBoundingClientRect();
+            var container = document.getElementById('gantt-table-container');
+            var containerRect = container ? container.getBoundingClientRect() : {top:0,left:0,right:window.innerWidth,bottom:window.innerHeight};
+            // Check available space
+            var spaceAbove = iconRect.top - containerRect.top;
+            var spaceBelow = containerRect.bottom - iconRect.bottom;
+            var spaceLeft = iconRect.left - containerRect.left;
+            var spaceRight = containerRect.right - iconRect.right;
+            // Tooltip height/width (estimate if not visible)
+            tooltip.style.display = 'block';
+            tooltip.style.opacity = '0';
+            var tooltipHeight = tooltip.offsetHeight || 120;
+            var tooltipWidth = tooltip.offsetWidth || 260;
+            tooltip.style.display = '';
+            tooltip.style.opacity = '';
+            // Prefer up, then down, then right, then left
+            if (spaceAbove > tooltipHeight + 20) {
+              direction = 'tooltip-up';
+            } else if (spaceBelow > tooltipHeight + 20) {
+              direction = 'tooltip-down';
+            } else if (spaceRight > tooltipWidth + 20) {
+              direction = 'tooltip-right';
+            } else {
+              direction = 'tooltip-left';
+            }
+            tooltip.classList.remove('tooltip-up','tooltip-down','tooltip-left','tooltip-right');
+            tooltip.classList.add(direction);
+          }
+          document.querySelectorAll('.meeting-icon-tooltip').forEach(function(icon) {
+            icon.addEventListener('mouseenter', function() { setMeetingTooltipDirection(icon); });
+            icon.addEventListener('focus', function() { setMeetingTooltipDirection(icon); });
+          });
+        </script>
+      </div>
     </section>
   </main>
   <footer>
